@@ -28,7 +28,7 @@
   <TraderStaticOffers Jaegeroffers="true" Peacekeeperoffers="true" Praporoffers="true" SkierOffers="true" Therapistoffers="true" Mechanicoffers="true" Ragmanoffers="true" />
   <PlayerOffers Tradeoffer_max="1" Rep_loss="0.0000002" Rep_gain="0.0000002" Tradeoffer_min="0" Tradeoffer_avg="1.5" Sell_underprice="2" Sell_overprice="1.7" Sell_chance="50" EnableFees="true" />
   <DynamicOffers ExpireThreshold="1500" Stack_min="10" PerOffer_min="7" Stack_max="600" PerOffer_max="30" Eurooffers="8" Dollaroffers="14" Roubleoffers="78" NonStack_min="1" Time_min="6" Price_min="0.8" NonStack_max="10" Time_max="60" Price_max="1.2" />
-  <Fleamarket FleaFIR="false" EventOffers="false" OverrideOffers="false" FleaMarketLevel="15" FleaBlacklist="" DisableBSGList="false" EnableFleamarket="true" />
+  <Fleamarket FleaFIR="false" EventOffers="false" OverrideOffers="true" FleaMarketLevel="15" FleaBlacklist="" DisableBSGList="false" EnableFleamarket="true" />
   <RepairBox NoRandomRepair="false" MaxSkillPointsPerRepair="0.6" OpGunRepair="false" RepairSkillPoint="0.05" OpArmorRepair="false" RepairMult="1" />
   <InsuranceTime Prapor_Max="36" Prapor_Min="24" Therapist_Max="24" Therapist_Min="12" />
   <Insurance ReturnChanceTherapist="45" InsuranceMultTherapist="0.25" EnableInsurance="true" InsuranceMultPrapor="0.16" InsuranceStorageTime="72" ReturnChancePrapor="35" />

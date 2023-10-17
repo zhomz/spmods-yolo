@@ -269,6 +269,9 @@
 	"Fleamarket":{
 		"FleaFIR":false,
 		"EventOffers":false,
+		"SellOffers":{
+		"SellOffersAmount":10
+		},
 		"FleaConditions":{
 		"FleaFood_Min":5,
 		"FleaArmor_Min":5,
@@ -285,7 +288,7 @@
 		"FleaVests_Max":100,
 		"FleaKeys_Max":100
 		},
-		"OverrideOffers":false,
+		"OverrideOffers":true,
 		"FleaMarketLevel":15,
 		"FleaBlacklist": [
 ],

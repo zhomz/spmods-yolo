@@ -1,6 +1,6 @@
 {
   "Aiming": {
-    "AccuracySpreadMultiGlobal": 1.5,
+    "AccuracySpreadMultiGlobal": 1.2,
     "FasterCQBReactionsGlobal": true
   },
   "Cover": {
@@ -40,7 +40,7 @@
     "AllRats": false
   },
   "Mind": {
-    "GlobalAggression": 1.0
+    "GlobalAggression": 1.5
   },
   "Hearing": {
     "GunshotAudioMultiplier": 1.0,
