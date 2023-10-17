@@ -25,7 +25,7 @@
     "NotLookingAngle": 15.0,
     "NotLookingVisionSpeedModifier": 1.33,
     "NotLookingAccuracyAmount": 0.33,
-    "GlobalDifficultyModifier": 1.0,
+    "GlobalDifficultyModifier": 1.1,
     "NoBushESPToggle": true,
     "EnhancedCoverFinding": true,
     "NoBushESPEnhanced": false,
@@ -161,7 +161,7 @@
   "Look": {
     "GlobalVisionDistanceMultiplier": 1.5,
     "GlobalVisionSpeedModifier": 1.5,
-    "NightTimeVisionModifier": 0.2,
+    "NightTimeVisionModifier": 0.8,
     "HourDawnStart": 6.0,
     "HourDawnEnd": 8.0,
     "HourDuskStart": 20.0,
