@@ -20,19 +20,19 @@
   },
   "General": {
     "BotsUseGrenades": true,
-    "NotLookingToggle": true,
+    "NotLookingToggle": false,
     "NotLookingTimeLimit": 4.0,
     "NotLookingAngle": 15.0,
     "NotLookingVisionSpeedModifier": 1.33,
     "NotLookingAccuracyAmount": 0.33,
-    "GlobalDifficultyModifier": 1.1,
+    "GlobalDifficultyModifier": 1.0,
     "NoBushESPToggle": true,
-    "EnhancedCoverFinding": true,
+    "EnhancedCoverFinding": false,
     "NoBushESPEnhanced": false,
     "NoBushESPFrequency": 0.1,
     "NoBushESPEnhancedRatio": 0.5,
     "NoBushESPDebugMode": false,
-    "HeadShotProtection": false
+    "HeadShotProtection": true
   },
   "Personality": {
     "AllGigaChads": false,
@@ -40,7 +40,7 @@
     "AllRats": false
   },
   "Mind": {
-    "GlobalAggression": 1.5
+    "GlobalAggression": 1.7
   },
   "Hearing": {
     "GunshotAudioMultiplier": 1.0,
@@ -78,8 +78,8 @@
     }
   },
   "Shoot": {
-    "GlobalScatterMultiplier": 1.0,
-    "GlobalRecoilMultiplier": 1.0,
+    "GlobalScatterMultiplier": 1.1,
+    "GlobalRecoilMultiplier": 1.2,
     "MaxRecoil": 1.5,
     "AddRecoil": -1.0,
     "RecoilDecay": 0.75,
