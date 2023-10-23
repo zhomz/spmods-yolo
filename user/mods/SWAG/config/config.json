@@ -22,12 +22,12 @@
       "reserve": 55
     },
     "bloodhounds": {
-      "customs": 0,
-      "woods": 0,
-      "shoreline": 0
+      "customs": 10,
+      "woods": 10,
+      "shoreline": 10
     },
     "crazyscavs": {
-      "shoreline": 0
+      "shoreline": 10
     },
     "snipers": {
       "customs": 65,
