@@ -1,7 +1,7 @@
 {
 	"enabled": true,
 	"debug": {
-		"enabled": true,
+		"enabled": false,
 		"scav_cooldown_time": 1500,
 		"free_labs_access": false,
 		"show_zone_outlines": false,
