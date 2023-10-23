@@ -672,7 +672,7 @@ let opticRework = class opticRework {
         return "done";
     }
 };
-opticRework = __decorate([
+exports.opticRework = opticRework;
+exports.opticRework = opticRework = __decorate([
     (0, tsyringe_1.injectable)()
 ], opticRework);
-exports.opticRework = opticRework;

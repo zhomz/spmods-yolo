@@ -2,27 +2,58 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.aiAmountProper = exports.validMaps = exports.pmcType = exports.diffProper = exports.reverseMapNames = exports.reverseBossNames = exports.roleCase = exports.Props = exports.Center = exports.ColliderParams = exports.Position = exports.SpawnPointParam = exports.MapWrapper = exports.GroupPattern = exports.Bot = void 0;
 class Bot {
+    BotType;
+    MaxBotCount;
 }
 exports.Bot = Bot;
 class GroupPattern {
+    Name;
+    Bots;
+    Time_min;
+    Time_max;
+    BotZone;
+    RandomTimeSpawn;
+    OnlySpawnOnce;
 }
 exports.GroupPattern = GroupPattern;
 class MapWrapper {
+    MapName;
+    MapGroups;
+    MapBosses;
 }
 exports.MapWrapper = MapWrapper;
 class SpawnPointParam {
+    Id;
+    Position;
+    Rotation;
+    Sides;
+    Categories;
+    Infiltration;
+    DelayToCanSpawnSec;
+    ColliderParams;
+    BotZoneName;
 }
 exports.SpawnPointParam = SpawnPointParam;
 class Position {
+    x;
+    y;
+    z;
 }
 exports.Position = Position;
 class ColliderParams {
+    _parent;
+    _props;
 }
 exports.ColliderParams = ColliderParams;
 class Center {
+    x;
+    y;
+    z;
 }
 exports.Center = Center;
 class Props {
+    Center;
+    Radius;
 }
 exports.Props = Props;
 exports.roleCase = {

@@ -2,7 +2,7 @@
   "name": "QuestZoneAPI",
   "version": "1.1.0",
   "main": "src/mod.js",
-  "akiVersion": "3.7.0",
+  "akiVersion": "3.6.0",
   "scripts": {
     "build": "node ./packageBuild.ts"
   },

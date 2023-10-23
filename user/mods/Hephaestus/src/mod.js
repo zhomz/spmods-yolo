@@ -26,6 +26,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const ConfigTypes_1 = require("C:/snapshot/project/obj/models/enums/ConfigTypes");
 const baseJson = __importStar(require("../db/base.json"));
 class SampleTrader {
+    mod;
+    logger;
     constructor() {
         this.mod = "Hephaestus";
     }

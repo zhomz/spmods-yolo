@@ -2,10 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.FluentAssortConstructor = void 0;
 class FluentAssortConstructor {
+    itemsToSell = [];
+    barterScheme = {};
+    loyaltyLevel = {};
+    hashUtil;
+    logger;
     constructor(hashutil, logger) {
-        this.itemsToSell = [];
-        this.barterScheme = {};
-        this.loyaltyLevel = {};
         this.hashUtil = hashutil;
         this.logger = logger;
     }

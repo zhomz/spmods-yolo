@@ -924,9 +924,19 @@ class MainSVM
 			}
 			Logger.debug("SVM:Insurance settings enabled")
 			//Repair.priceMultiplier = Config.Insurance.RepairBox.RepairMult; Disabled due to visual bug - it doesn't show converted number, the function itself is working tho
-			Repair.weaponSkillRepairGain = Config.Insurance.RepairBox.RepairSkillPoint;
+			//Logger.info(Repair)
+			Repair.armorKitSkillPointGainPerRepairPointMultiplier = Config.Insurance.RepairBox.RepairSkillPoint;
 			Repair.applyRandomizeDurabilityLoss = !Config.Insurance.RepairBox.NoRandomRepair;
-			Repair.maxIntellectGainPerRepair = Config.Insurance.RepairBox.MaxSkillPointsPerRepair;
+			if(Repair.maxIntellectGainPerRepair == undefined)
+			{
+				Logger.info("3.7.0 Detected, disabling Max Skill point acquired per repair")
+			}
+			else
+			{
+				Repair.maxIntellectGainPerRepair.kit = Config.Insurance.RepairBox.MaxSkillPointsPerRepair;
+				Repair.maxIntellectGainPerRepair.trader = Config.Insurance.RepairBox.MaxSkillPointsPerRepair;
+			}
+			//Logger.warning(Repair)
 			Insurance.insuranceMultiplier["54cb50c76803fa8b248b4571"] = Config.Insurance.InsuranceMultPrapor;
 			Insurance.insuranceMultiplier["54cb57776803fa99248b456e"] = Config.Insurance.InsuranceMultTherapist;
 			Insurance.returnChancePercent["54cb50c76803fa8b248b4571"] = Config.Insurance.ReturnChancePrapor;
@@ -1356,14 +1366,14 @@ class MainSVM
 				//Second revision, i've created a monster. now you can literally alter any field/filter/grid with it.
 				//Third revision...I feel sad looking at this, this time is probably final, 10 fields including filters, less funcs this time
 				// switch make it slightly effective in use comparing to previous version
-				if (Config.ItemList.length > 0)
+				if (Config.Items.IDBox.length > 0)
 				{
 					Logger.info("SVM: Custom Properties enabled")
 					try
 					{
-						for (let k in Config.ItemList)
+						for (let k in Config.Items.IDBox)
 						{
-							let fin = Config.ItemList[k].split(":")
+							let fin = Config.Items.IDBox[k].split(":")
 							Logger.info(fin)
 							switch (fin.length)
 							{

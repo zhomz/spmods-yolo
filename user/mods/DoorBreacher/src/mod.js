@@ -5,6 +5,11 @@ const traderHelpers_1 = require("./traderHelpers");
 const fluentTraderAssortCreator_1 = require("./fluentTraderAssortCreator");
 let logger;
 class Mod {
+    //declare private variable db of DatabaseServer type
+    db;
+    traderHelper;
+    fluentTraderAssortHelper;
+    traderID;
     postDBLoad(container) {
         // Resolve containers
         const CustomItem = container.resolve("CustomItemService");

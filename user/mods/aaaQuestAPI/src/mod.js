@@ -8,9 +8,9 @@ const apiPath = loader.getModPath("API");
 const api = require(apiPath);
 */
 class QuestZoneApi {
-    constructor() {
-        this.modConfig = require("../config/config.json");
-    }
+    router;
+    dbServer;
+    modConfig = require("../config/config.json");
     preAkiLoad(container) {
         const logger = container.resolve("WinstonLogger");
         this.router = container.resolve("StaticRouterModService");

@@ -1,5 +1,5 @@
 {
-	"PresetName":"SVM_Default",
+	"PresetName":"Nu",
 	"ModsCompat":{
 		"checkBox5":false
 		},
@@ -8,8 +8,8 @@
 		"ExamineTime":1,
 		"ExamineKeys":false,
 		"WeaponHeatOff":false,
-		"SMGToHolster":false,
-		"PistolToMain":false,
+		"SMGToHolster":true,
+		"PistolToMain":true,
 		"AllExaminedItems":true,
 		"MisfireChance":1,
 		"EquipRigsWithArmors":false,
@@ -35,7 +35,7 @@
 		"IDBox": [
 ],
 		"RemoveKeysUsageNumber":false,
-		"RaidDrop":false
+		"RaidDrop":true
 		},
 	"Hideout":{
 		"Regeneration":{
@@ -52,9 +52,9 @@
 		"MaxBitcoins":3,
 		"NoFuelMult":0.07,
 		"ScavCasePrice":1,
-		"ScavCaseTime":1,
-		"HideoutConstMult":0.1,
-		"HideoutProdMult":0.1,
+		"ScavCaseTime":0.1,
+		"HideoutConstMult":0.01,
+		"HideoutProdMult":0.01,
 		"WaterFilterRate":66,
 		"GPUBoostRate":0.041225,
 		"AirFilterRate":0.0047222222222222,
@@ -66,8 +66,8 @@
 		"Fence":{
 		"FenceArmorDurability_Max":100,
 		"FenceGunDurability_Max":100,
-		"FenceArmorDurability_Min":35,
-		"FenceGunDurability_Min":35,
+		"FenceArmorDurability_Min":70,
+		"FenceGunDurability_Min":70,
 		"FencePriceMult":1.2,
 		"FencePremiumAmountOnSale":50,
 		"FencePresetCount":5,
@@ -191,8 +191,8 @@
 		"HydrationLoss":1,
 		"EnergyLoss":1,
 		"EnableHealth":false,
-		"SkillProgMult":0.4,
-		"WeaponSkillMult":1,
+		"SkillProgMult":2,
+		"WeaponSkillMult":2,
 		"EnablePlayer":true,
 		"DiedHealth":{
 		"Saveeffects":true,
@@ -204,7 +204,7 @@
 		"UnlimitedStamina":false
 		},
 	"Raids":{
-		"RaidTime":0,
+		"RaidTime":15,
 		"SaveQuestItems":false,
 		"Exfils":{
 		"CoopPaidLighthouse":5000,
@@ -249,7 +249,7 @@
 		"EnableRaids":true,
 		"Removelabkey":false,
 		"RaidStartup":{
-		"TimeBeforeDeployLocal":10,
+		"TimeBeforeDeployLocal":15,
 		"AIAmount":"AsOnline",
 		"SaveDurability":true,
 		"SaveLoot":true,
@@ -262,7 +262,7 @@
 		"RaidMult":{
 		"MIA":1,
 		"Runner":0.5,
-		"Survived":1.3,
+		"Survived":1.5,
 		"Killed":1
 		}
 		},
@@ -340,7 +340,7 @@
 		"OpArmorRepair":false,
 		"RepairMult":1
 		},
-		"ReturnChanceTherapist":75,
+		"ReturnChanceTherapist":80,
 		"InsuranceMultTherapist":0.25,
 		"EnableInsurance":true,
 		"InsuranceTime":{
@@ -351,13 +351,13 @@
 		},
 		"InsuranceMultPrapor":0.16,
 		"InsuranceStorageTime":72,
-		"ReturnChancePrapor":60
+		"ReturnChancePrapor":65
 		},
 	"Quests":{
 		"ScavQuests":{
 		"ScavDailyMinItems":2,
 		"ScavDailyMaxItems":5,
-		"ScavDailyExtracts":3,
+		"ScavDailyExtracts":1,
 		"ScavDailyTypes": ["Elimination","Completion"],
 		"ScavDailySpread":0.5,
 		"ScavDailyReputation": [0.01, 0.02, 0.05, 0.05],
@@ -368,7 +368,7 @@
 		"ScavDailyMinKills":2,
 		"ScavDailyMaxKills":5,
 		"ScavDailyAccess":1,
-		"ScavDailyQuestAmount":1,
+		"ScavDailyQuestAmount":0,
 		"ScavDailyLifespan":1440
 		},
 		"WeeklyQuests":{
@@ -392,7 +392,7 @@
 		"DailyQuests":{
 		"DailyMinItems":2,
 		"DailyMaxItems":5,
-		"DailyExtracts":3,
+		"DailyExtracts":1,
 		"DailyTypes": ["Elimination","Completion","Exploration"],
 		"DailySpread":0.5,
 		"DailyReputation": [0.01, 0.01, 0.01, 0.01],
@@ -416,10 +416,10 @@
 		"CarBaseStanding":0.25,
 		"ScavTimer":900,
 		"ScavCustomPockets":false,
-		"ScavLab":false,
+		"ScavLab":true,
 		"FriendlyScavs":false,
 		"HostileScavs":false,
-		"StandingFriendlyKill":-0.04,
+		"StandingFriendlyKill":0,
 		"StandingPMCKill":0.01,
 		"EnableScavHealth":false,
 		"EnableScav":true

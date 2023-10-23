@@ -15,7 +15,6 @@ import { Money } from "@spt-aki/models/enums/Money";
 import { TraderHelper } from "./traderHelpers";
 import { FluentAssortConstructor } from "./fluentTraderAssortCreator";
 import { ItemsJson } from "./items.type";
-import { Filters } from "../dist/src/items.type";
 
 let logger: ILogger;
 

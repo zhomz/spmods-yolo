@@ -1,4 +1,4 @@
 {
     "disable_sens_changes": false,
-    "thermal_bundles_mod_compatibility": false
+    "thermal_bundles_mod_compatibility": true
 }

@@ -7,6 +7,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const jsonc_1 = require("C:/snapshot/project/node_modules/jsonc");
 const path_1 = __importDefault(require("path"));
 class AmmoStats {
+    config;
     CalculateArmorLevel(penetrationValue) {
         if (this.config.usingRealismMod) {
             return (penetrationValue >= 100) ? 10

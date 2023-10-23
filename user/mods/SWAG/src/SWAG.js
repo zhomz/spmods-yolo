@@ -51,6 +51,43 @@ let BossWaveSpawnedOnceAlready;
 const customPatterns = {};
 const globalPatterns = {};
 class SWAG {
+    static savedLocationData = {
+        factory4_day: undefined,
+        factory4_night: undefined,
+        bigmap: undefined,
+        interchange: undefined,
+        laboratory: undefined,
+        lighthouse: undefined,
+        rezervbase: undefined,
+        shoreline: undefined,
+        tarkovstreets: undefined,
+        woods: undefined,
+        // unused
+        develop: undefined,
+        hideout: undefined,
+        privatearea: undefined,
+        suburbs: undefined,
+        terminal: undefined,
+        town: undefined,
+    };
+    static pmcType = ["sptbear", "sptusec"];
+    static randomWaveTimer = {
+        time_min: 0,
+        time_max: 0
+    };
+    static actual_timers = {
+        time_min: 0,
+        time_max: 0
+    };
+    static waveCounter = {
+        count: 1
+    };
+    static raid_time = {
+        time_of_day: "day"
+    };
+    static bossCount = {
+        count: 0
+    };
     preAkiLoad(container) {
         const HttpResponse = container.resolve("HttpResponseUtil");
         const staticRouterModService = container.resolve("StaticRouterModService");
@@ -794,41 +831,4 @@ class SWAG {
         }
     }
 }
-SWAG.savedLocationData = {
-    factory4_day: undefined,
-    factory4_night: undefined,
-    bigmap: undefined,
-    interchange: undefined,
-    laboratory: undefined,
-    lighthouse: undefined,
-    rezervbase: undefined,
-    shoreline: undefined,
-    tarkovstreets: undefined,
-    woods: undefined,
-    // unused
-    develop: undefined,
-    hideout: undefined,
-    privatearea: undefined,
-    suburbs: undefined,
-    terminal: undefined,
-    town: undefined,
-};
-SWAG.pmcType = ["sptbear", "sptusec"];
-SWAG.randomWaveTimer = {
-    time_min: 0,
-    time_max: 0
-};
-SWAG.actual_timers = {
-    time_min: 0,
-    time_max: 0
-};
-SWAG.waveCounter = {
-    count: 1
-};
-SWAG.raid_time = {
-    time_of_day: "day"
-};
-SWAG.bossCount = {
-    count: 0
-};
 module.exports = { mod: new SWAG() };

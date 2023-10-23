@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class CameraRecoilRemover {
-    constructor() {
-        this.config = require("../config/config.json");
-    }
+    container;
+    config = require("../config/config.json");
+    logger;
     postDBLoad(container) {
         this.container = container;
         this.logger = this.container.resolve("WinstonLogger");

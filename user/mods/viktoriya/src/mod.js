@@ -36,9 +36,15 @@ const configLoader_1 = require("./configLoader");
 const itemCreateHelper_1 = require("./helpers/itemCreateHelper");
 const presetCreateHelper_1 = require("./helpers/presetCreateHelper");
 class Vicktoriya {
+    mod;
+    logger;
+    traderHeper;
+    configLoader;
     constructor() {
         this.mod = "viktoriya"; // Set name of mod so we can log it to console later
     }
+    static container;
+    vikConfig;
     /**
      * Some work needs to be done prior to SPT code being loaded, registering the profile image + setting trader update time inside the trader config json
      * @param container Dependency container

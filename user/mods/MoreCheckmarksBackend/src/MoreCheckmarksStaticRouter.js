@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const ConfigTypes_1 = require("C:/snapshot/project/obj/models/enums/ConfigTypes");
 const Traders_1 = require("C:/snapshot/project/obj/models/enums/Traders");
 class Mod {
+    questConfig;
     preAkiLoad(container) {
         const logger = container.resolve("WinstonLogger");
         const dynamicRouterModService = container.resolve("DynamicRouterModService");
