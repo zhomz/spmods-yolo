@@ -1,20 +1,19 @@
 {
-	"PresetName":"Nu",
+	"PresetName":"Oraceon's FairAndBalanced Preset 1.5",
 	"ModsCompat":{
 		"checkBox5":false
 		},
 	"Items":{
-		"HeatFactor":1,
+		"HeatFactor":0.85,
 		"ExamineTime":1,
-		"ExamineKeys":false,
 		"WeaponHeatOff":false,
-		"SMGToHolster":true,
-		"PistolToMain":true,
-		"AllExaminedItems":true,
-		"MisfireChance":1,
+		"SMGToHolster":false,
+		"PistolToMain":false,
+		"AllExaminedItems":false,
+		"MisfireChance":0.8,
 		"EquipRigsWithArmors":false,
 		"RemoveSecureContainerFilters":false,
-		"MalfunctChanceMult":1,
+		"MalfunctChanceMult":0.8,
 		"WeightChanger":1,
 		"ItemPriceMult":1,
 		"CashStack":500000,
@@ -40,27 +39,27 @@
 	"Hideout":{
 		"Regeneration":{
 		"OfflineRegen":false,
-		"HealthRegen":1,
+		"HealthRegen":1.3,
 		"HideoutHealth":false,
 		"HideoutEnergy":false,
 		"HideoutHydration":false,
-		"HydrationRegen":1,
-		"EnergyRegen":1
+		"HydrationRegen":1.3,
+		"EnergyRegen":1.3
 		},
-		"WaterFilterTime":325,
-		"BitcoinTime":2416,
+		"WaterFilterTime":60,
+		"BitcoinTime":760,
 		"MaxBitcoins":3,
-		"NoFuelMult":0.07,
-		"ScavCasePrice":1,
-		"ScavCaseTime":0.1,
-		"HideoutConstMult":0.01,
-		"HideoutProdMult":0.01,
-		"WaterFilterRate":66,
-		"GPUBoostRate":0.041225,
-		"AirFilterRate":0.0047222222222222,
+		"NoFuelMult":0.3,
+		"ScavCasePrice":1.2,
+		"ScavCaseTime":0.4,
+		"HideoutConstMult":0.0001,
+		"HideoutProdMult":0.05,
+		"WaterFilterRate":100,
+		"GPUBoostRate":0.051225,
+		"AirFilterRate":0.0081,
 		"RemoveConstructionsRequirements":false,
 		"EnableHideout":true,
-		"FuelConsumptionRate":0.0013194444444444
+		"FuelConsumptionRate":0.004119
 		},
 	"Traders":{
 		"Fence":{
@@ -142,20 +141,20 @@
 		"MixedMax":25,
 		"BarterMin":16,
 		"MixedMin":12,
-		"Streets_air":20,
-		"AirtimeMin":1,
-		"AirtimeMax":5,
+		"Streets_air":17,
+		"AirtimeMin":5,
+		"AirtimeMax":15,
 		"Lighthouse_air":20,
-		"Bigmap_air":25,
+		"Bigmap_air":15,
 		"Interchange_air":20,
 		"Shoreline_air":20,
-		"Reserve_air":20,
+		"Reserve_air":10,
 		"Woods_air":25
 		},
 		"EnableLoot":true,
 		"Locations":{
 		"Streets_conmult":1,
-		"Streets_mult":3.6,
+		"Streets_mult":3.2,
 		"Lighthouse_conmult":1,
 		"Bigmap_conmult":1,
 		"Interchange_conmult":1,
@@ -165,14 +164,14 @@
 		"Reserve_conmult":1,
 		"Woods_conmult":1,
 		"FactoryNight_conmult":1,
-		"Lighthouse_mult":3.6,
-		"Bigmap_mult":3.1,
-		"Interchange_mult":3.5,
+		"Lighthouse_mult":3,
+		"Bigmap_mult":2.5,
+		"Interchange_mult":2.3,
 		"FactoryDay_mult":4,
 		"Laboratory_mult":3,
-		"Shoreline_mult":4.5,
-		"Reserve_mult":3.7,
-		"Woods_mult":2.4,
+		"Shoreline_mult":3.5,
+		"Reserve_mult":3.2,
+		"Woods_mult":1.8,
 		"FactoryNight_mult":4
 		}
 		},
@@ -180,19 +179,19 @@
 		"EnableEnergyHydrationTab":false,
 		"Skills":{
 		"SkillFatigueReset":200,
-		"SkillFreshEffect":1.3,
+		"SkillFreshEffect":1.8,
 		"SkillFPoints":1,
 		"SkillPointsBeforeFatigue":1,
-		"SkillMinEffect":0.0001,
-		"SkillFatiguePerPoint":0.6
+		"SkillMinEffect":0.00025,
+		"SkillFatiguePerPoint":0.5
 		},
 		"FallDamage":false,
 		"BlackStomach":5,
-		"HydrationLoss":1,
-		"EnergyLoss":1,
+		"HydrationLoss":1.2,
+		"EnergyLoss":1.2,
 		"EnableHealth":false,
-		"SkillProgMult":2,
-		"WeaponSkillMult":2,
+		"SkillProgMult":3,
+		"WeaponSkillMult":2.5,
 		"EnablePlayer":true,
 		"DiedHealth":{
 		"Saveeffects":true,
@@ -207,20 +206,20 @@
 		"RaidTime":15,
 		"SaveQuestItems":false,
 		"Exfils":{
-		"CoopPaidLighthouse":5000,
-		"CarLighthouse":5000,
-		"CarExtractTime":60,
+		"CoopPaidLighthouse":10000,
+		"CarLighthouse":6500,
+		"CarExtractTime":30,
 		"ArmorExtract":false,
 		"CoopPaid":true,
-		"CoopPaidInterchange":5000,
-		"CoopPaidWoods":5000,
-		"CoopPaidReserve":5000,
+		"CoopPaidInterchange":10000,
+		"CoopPaidWoods":10000,
+		"CoopPaidReserve":10000,
 		"NoBackpack":false,
 		"FreeCoop":false,
-		"CarInterchange":5000,
-		"CarWoods":5000,
-		"CarStreets":5000,
-		"CarCustoms":5000,
+		"CarInterchange":6500,
+		"CarWoods":6500,
+		"CarStreets":6500,
+		"CarCustoms":6500,
 		"ExtendedExtracts":false,
 		"ChanceExtracts":false,
 		"GearExtract":false
@@ -260,10 +259,10 @@
 		"ScavWars":false
 		},
 		"RaidMult":{
-		"MIA":1,
-		"Runner":0.5,
-		"Survived":1.5,
-		"Killed":1
+		"MIA":0.7,
+		"Runner":0.7,
+		"Survived":1.8,
+		"Killed":0.05
 		}
 		},
 	"Fleamarket":{
@@ -306,11 +305,11 @@
 		"PlayerOffers":{
 		"Tradeoffer_max":1,
 		"Rep_loss":2E-07,
-		"Rep_gain":2E-07,
+		"Rep_gain":4E-07,
 		"Tradeoffer_min":0,
 		"Tradeoffer_avg":1.5,
 		"Sell_underprice":2,
-		"Sell_overprice":1.7,
+		"Sell_overprice":0.5,
 		"Sell_chance":50,
 		"EnableFees":true
 		},
@@ -340,24 +339,24 @@
 		"OpArmorRepair":false,
 		"RepairMult":1
 		},
-		"ReturnChanceTherapist":80,
+		"ReturnChanceTherapist":85,
 		"InsuranceMultTherapist":0.25,
 		"EnableInsurance":true,
 		"InsuranceTime":{
-		"Prapor_Max":36,
-		"Prapor_Min":24,
-		"Therapist_Max":24,
-		"Therapist_Min":12
+		"Prapor_Max":24,
+		"Prapor_Min":8,
+		"Therapist_Max":12,
+		"Therapist_Min":4
 		},
 		"InsuranceMultPrapor":0.16,
-		"InsuranceStorageTime":72,
-		"ReturnChancePrapor":65
+		"InsuranceStorageTime":48,
+		"ReturnChancePrapor":75
 		},
 	"Quests":{
 		"ScavQuests":{
 		"ScavDailyMinItems":2,
 		"ScavDailyMaxItems":5,
-		"ScavDailyExtracts":1,
+		"ScavDailyExtracts":3,
 		"ScavDailyTypes": ["Elimination","Completion"],
 		"ScavDailySpread":0.5,
 		"ScavDailyReputation": [0.01, 0.02, 0.05, 0.05],
@@ -368,7 +367,7 @@
 		"ScavDailyMinKills":2,
 		"ScavDailyMaxKills":5,
 		"ScavDailyAccess":1,
-		"ScavDailyQuestAmount":0,
+		"ScavDailyQuestAmount":1,
 		"ScavDailyLifespan":1440
 		},
 		"WeeklyQuests":{
@@ -392,7 +391,7 @@
 		"DailyQuests":{
 		"DailyMinItems":2,
 		"DailyMaxItems":5,
-		"DailyExtracts":1,
+		"DailyExtracts":3,
 		"DailyTypes": ["Elimination","Completion","Exploration"],
 		"DailySpread":0.5,
 		"DailyReputation": [0.01, 0.01, 0.01, 0.01],
@@ -413,15 +412,24 @@
 	"Scav":{
 		"HostileBosses":false,
 		"FriendlyBosses":false,
-		"CarBaseStanding":0.25,
+		"CarBaseStanding":0.2,
 		"ScavTimer":900,
 		"ScavCustomPockets":false,
-		"ScavLab":true,
+		"ScavLab":false,
 		"FriendlyScavs":false,
 		"HostileScavs":false,
 		"StandingFriendlyKill":0,
-		"StandingPMCKill":0.01,
-		"EnableScavHealth":false,
+		"StandingPMCKill":0.05,
+		"EnableScavHealth":true,
+		"ScavHealth":{
+		"ScavLeftArm":40,
+		"ScavRightArm":40,
+		"ScavHead":35,
+		"ScavChest":65,
+		"ScavStomach":50,
+		"ScavLeftLeg":45,
+		"ScavRightLeg":45
+		},
 		"EnableScav":true
 		},
 	"Bots":{
