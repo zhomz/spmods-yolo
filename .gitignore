@@ -5,6 +5,8 @@ Logs/
 MonoBleedingEdge/
 NLog/
 BepInEx/cache/
+BepInEx/core/
+BepInEx/patchers/aki_PrePatch.dll
 BepInEx/LogOutput.log
 user/cache/
 user/launcher/
