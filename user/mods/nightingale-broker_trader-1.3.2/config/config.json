@@ -1,0 +1,21 @@
+{
+    "logger": {
+        "verbose": false
+    },
+    "useCutomTraders": false,
+    "customTraderIds": [],
+    "buyRateDollar": 1,
+    "buyRateEuro": 1,
+    "profitCommissionPercentage": 0,
+    "useRagfair": true,
+    "ragfairUseLowestPrice": true,
+    "ragfairIgnoreAttachments": true,
+    "ragfairIgnorePlayerLevel": false,
+    "ragfairIgnoreFoundInRaid": false,
+    "tradersIgnoreUnlockedStatus": false,
+    "useNotifications": true,
+    "notificationsLongerDuration": false,
+    "useCache": false,
+    "useClientPlugin": true,
+    "useItemBaseClassServiceFix": false
+}

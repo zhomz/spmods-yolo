@@ -353,58 +353,7 @@
 		"ReturnChancePrapor":75
 		},
 	"Quests":{
-		"ScavQuests":{
-		"ScavDailyMinItems":2,
-		"ScavDailyMaxItems":5,
-		"ScavDailyExtracts":3,
-		"ScavDailyTypes": ["Elimination","Completion"],
-		"ScavDailySpread":0.5,
-		"ScavDailyReputation": [0.01, 0.02, 0.05, 0.05],
-		"ScavDailyItems": [2, 3, 4, 4],
-		"ScavDailyRoubles": [6000, 10000, 100000, 250000],
-		"ScavDailyExp": [2000, 4000, 20000, 80000],
-		"ScavDailyLevels": [1, 20, 45, 100],
-		"ScavDailyMinKills":2,
-		"ScavDailyMaxKills":5,
-		"ScavDailyAccess":1,
-		"ScavDailyQuestAmount":1,
-		"ScavDailyLifespan":1440
-		},
-		"WeeklyQuests":{
-		"WeeklyMinItems":2,
-		"WeeklyExtracts":10,
-		"WeeklyMaxItems":5,
-		"WeeklyTypes": ["Elimination","Completion","Exploration"],
-		"WeeklySpread":0.5,
-		"WeeklyReputation": [0.02, 0.03, 0.03, 0.03],
-		"WeeklyItems": [3, 3, 4, 4],
-		"WeeklyRoubles": [12000, 20000, 200000, 500000],
-		"WeeklyExp": [4000, 8000, 40000, 160000],
-		"WeeklyLevels": [1, 20, 45, 100],
-		"WeeklyMinKills":5,
-		"WeeklyMaxKills":15,
-		"WeeklyAccess":15,
-		"WeeklyQuestAmount":1,
-		"WeeklyLifespan":10080
-		},
-		"EnableQuests":true,
-		"DailyQuests":{
-		"DailyMinItems":2,
-		"DailyMaxItems":5,
-		"DailyExtracts":3,
-		"DailyTypes": ["Elimination","Completion","Exploration"],
-		"DailySpread":0.5,
-		"DailyReputation": [0.01, 0.01, 0.01, 0.01],
-		"DailyItems": [1, 2, 4, 4],
-		"DailyRoubles": [6000, 10000, 100000, 250000],
-		"DailyExp": [2000, 4000, 20000, 80000],
-		"DailyLevels": [1, 20, 45, 100],
-		"DailyMinKills":2,
-		"DailyMaxKills":5,
-		"DailyAccess":5,
-		"DailyQuestAmount":3,
-		"DailyLifespan":1440
-		}
+		"EnableQuests":false
 		},
 	"CSM":{
 		"EnableCSM":false
