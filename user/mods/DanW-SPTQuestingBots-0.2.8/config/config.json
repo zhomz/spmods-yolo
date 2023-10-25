@@ -7,8 +7,8 @@
 		"show_zone_outlines": false,
 		"show_failed_paths": false
 	},
-	"max_calc_time_per_frame_ms": 15,
-	"bot_pathing_update_interval_ms": 150,
+	"max_calc_time_per_frame_ms": 5,
+	"bot_pathing_update_interval_ms": 100,
 	"brain_layer_priority": 26,
 	"allowed_bot_types_for_questing": {
 		"scav": false,
@@ -36,7 +36,7 @@
 		"max_navmesh_path_error": 10
 	},
 	"bot_questing_requirements": {
-		"exclude_bots_by_level": false,
+		"exclude_bots_by_level": true,
 		"repeat_quest_delay": 300,
 		"max_time_per_quest": 300,
 		"min_hydration": 20,

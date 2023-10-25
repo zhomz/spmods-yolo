@@ -203,7 +203,7 @@
 		"UnlimitedStamina":false
 		},
 	"Raids":{
-		"RaidTime":15,
+		"RaidTime":10,
 		"SaveQuestItems":false,
 		"Exfils":{
 		"CoopPaidLighthouse":10000,
@@ -359,47 +359,13 @@
 		"EnableCSM":false
 		},
 	"Scav":{
-		"HostileBosses":false,
-		"FriendlyBosses":false,
-		"CarBaseStanding":0.2,
-		"ScavTimer":900,
-		"ScavCustomPockets":false,
-		"ScavLab":false,
-		"FriendlyScavs":false,
-		"HostileScavs":false,
-		"StandingFriendlyKill":0,
-		"StandingPMCKill":0.05,
-		"EnableScavHealth":false,
-		"EnableScav":true
+		"EnableScav":false
 		},
 	"Bots":{
 		"EnableBots":false
 		},
 	"BL":{
-		"ForceCustomWaves":false,
-		"PMCChance":{
-		"PMCNamePrefix":15,
-		"PMCAllNamePrefix":5,
-		"PMCLooseWep":15,
-		"HostilePMC":100,
-		"PMCWepEnhance":5
-		},
-		"LevelMargin":10,
-		"BearNamesEnable":false,
-		"UsecNamesEnable":false,
-		"PMCRatio":50,
-		"AItoPMC":{
-		"PMCtoCursedScav":20,
-		"SnipertoPMC":0,
-		"PMCtoScav":25,
-		"ExusectoPMC":5,
-		"PMCtoRaider":7
-		},
-		"PMCOverride":false,
-		"LootableMelee":false,
-		"EnableAdvLoad":true,
-		"AddAllKeys":false,
-		"AddAllContainers":false
+		"EnableAdvLoad":false
 		},
 	"Deprecated":{
 		"RemoveStock":false,
