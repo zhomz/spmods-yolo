@@ -17,7 +17,7 @@
     "SCAVBotLimitPresets": {
       "FactoryBotLimit": 5,
       "InterchangeBotLimit": 10,
-      "LaboratoryBotLimit": 4,
+      "LaboratoryBotLimit": 6,
       "LighthouseBotLimit": 10,
       "ReserveBotLimit": 10,
       "ShorelineBotLimit": 10,

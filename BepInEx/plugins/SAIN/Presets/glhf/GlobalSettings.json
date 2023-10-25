@@ -29,7 +29,7 @@
     "NoBushESPToggle": true,
     "EnhancedCoverFinding": false,
     "NoBushESPEnhanced": false,
-    "NoBushESPFrequency": 0.1,
+    "NoBushESPFrequency": 0.2,
     "NoBushESPEnhancedRatio": 0.5,
     "NoBushESPDebugMode": false,
     "HeadShotProtection": true

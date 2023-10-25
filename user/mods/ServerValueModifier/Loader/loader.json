@@ -1,5 +1,5 @@
 {
-	"PresetName":"Oraceon's FairAndBalanced Preset 1.5",
+	"PresetName":"Nu",
 	"ModsCompat":{
 		"checkBox5":false
 		},
@@ -369,16 +369,7 @@
 		"HostileScavs":false,
 		"StandingFriendlyKill":0,
 		"StandingPMCKill":0.05,
-		"EnableScavHealth":true,
-		"ScavHealth":{
-		"ScavLeftArm":40,
-		"ScavRightArm":40,
-		"ScavHead":35,
-		"ScavChest":65,
-		"ScavStomach":50,
-		"ScavLeftLeg":45,
-		"ScavRightLeg":45
-		},
+		"EnableScavHealth":false,
 		"EnableScav":true
 		},
 	"Bots":{

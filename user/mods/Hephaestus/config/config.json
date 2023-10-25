@@ -7,5 +7,5 @@
     "EXPLAIN":"USE one of the above ids for currency",
     "currency":"569668774bdc2da2298b4568",
     "HELP_discount":"acceptable value 0-100 (0 - no discount, 100 - free)",
-    "discount":90
+    "discount":60
 }
