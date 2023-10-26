@@ -14,7 +14,7 @@
         "5example3208of34not8f83real8a1id"
     ],
     "removePMCLootForLootingBots": true,
-    "removeScavLootForLootingBots": false,
+    "removeScavLootForLootingBots": true,
     "levelRange": {
         "1": {
             "min": 1,
