@@ -43,7 +43,7 @@ export class globalValues {
 
         const isNight = hours < 7 || hours >= 19
 
-        config.debug && console.log("isNight", isNight ? "YES" : "NO", hours)
+        config.debug && console.log("The server thinks it is ", isNight ? "NIGHT" : "DAY", hours, " do appropriate things.")
 
         const randomisation = finalEquipment.randomisation
 
@@ -62,7 +62,7 @@ export class globalValues {
         makeMapSpecificWeaponWeightings(location, items, this.originalWeighting, pmcWeighting)
 
         // saveToFile(originalBotTypesCopy.usec.inventory.mods, "updated.json")
-        // saveToFile(originalBotTypesCopy.bear.inventory.mods, "changedInventory.json")
+        // saveToFile(originalBotTypesCopy.usec.inventory, "refDBS/usecInventoryRef.json")
         // saveToFile(finalEquipment, "finalEquipment.json")
         // saveToFile(this.originalWeighting, "originalWeighting.json")
         botConfig.equipment.pmc = finalEquipment
