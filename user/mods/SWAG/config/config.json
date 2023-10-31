@@ -9,9 +9,9 @@
   },
   "spawnChances": {
     "cultists": {
-      "customs": 15,
-      "woods": 15,
-      "shoreline": 15,
+      "customs": 20,
+      "woods": 20,
+      "shoreline": 20,
       "factory_night": 30
     },
     "rogues": {
@@ -22,12 +22,12 @@
       "reserve": 55
     },
     "bloodhounds": {
-      "customs": 15,
-      "woods": 15,
-      "shoreline": 15
+      "customs": 30,
+      "woods": 30,
+      "shoreline": 30
     },
     "crazyscavs": {
-      "shoreline": 15
+      "shoreline": 30
     },
     "snipers": {
       "customs": 65,
