@@ -8,8 +8,8 @@ const LocationUpdater = (container) => {
     staticRouterModService.registerStaticRouter(`AlgorithmicLevelProgressionMapUpdater`, [{
             url: "/client/raid/configuration",
             action: (_url, info, _sessionId, output) => {
-                const date = weatherGenerator.getInRaidTime(new Date());
-                const hours = info.timeVariant === "PAST" ? date.getHours() - 12 : date.getHours();
+                const time = weatherGenerator.calculateGameTime({ acceleration: 0, time: "", date: "" }).time;
+                const hours = getTime(time, info.timeVariant === "PAST" ? 12 : 0);
                 GlobalValues_1.globalValues.setValuesForLocation(info.location.toLowerCase(), hours);
                 return output;
             }
@@ -17,3 +17,11 @@ const LocationUpdater = (container) => {
     GlobalValues_1.globalValues.config.debug && console.log("Algorthimic LevelProgression: Custom router AlgorithmicLevelProgressionMapUpdater Registered");
 };
 exports.LocationUpdater = LocationUpdater;
+function getTime(time, hourDiff) {
+    let [h, m] = time.split(':');
+    // console.log("minutes", m)
+    if (parseInt(h) == 0) {
+        return Number(h);
+    }
+    return Number(Math.abs(parseInt(h) - hourDiff));
+}

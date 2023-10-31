@@ -124,12 +124,26 @@ const dayTimeCullList = [
     "57fd23e32459772d0805bcf1",
     "544909bb4bdc2d6f028b4577" // tactical_all_insight_anpeq15
 ];
+const smgUpperRails = new Set([
+    "5926dad986f7741f82604363",
+    "5a966ec8a2750c00171b3f36",
+    "602e63fb6335467b0c5ac94d",
+    "5894a5b586f77426d2590767",
+    "5de8e67c4a9f347bc92edbd7"
+]);
+const marksmanUpperRails = new Set(["5df8e4080b92095fd441e594", "5dfcd0e547101c39625f66f9"]);
 const updateScopes = (mods, isNight, items, location) => {
     const weaponTypeMapper = buildOutWeaponTypeMapper(location, isNight);
     for (let key in mods) {
-        if ((0, utils_1.checkParentRecursive)(key, items, [utils_1.weaponParent])) {
+        if (smgUpperRails.has(key) || marksmanUpperRails.has(key) || (0, utils_1.checkParentRecursive)(key, items, [utils_1.weaponParent])) {
             const parent = items[key]._parent;
-            const scopeTypes = weaponTypeMapper[parent];
+            let scopeTypes = weaponTypeMapper[parent];
+            if (smgUpperRails.has(key)) {
+                scopeTypes = weaponTypeMapper[utils_1.weaponTypeNameToId.Smg];
+            }
+            if (marksmanUpperRails.has(key)) {
+                scopeTypes = weaponTypeMapper[utils_1.weaponTypeNameToId.MarksmanRifle];
+            }
             if (!scopeTypes) {
                 // console.log("UNABLE TO FIND PARENT FOR", key, items[key]._name)
                 break;
@@ -142,7 +156,7 @@ const updateScopes = (mods, isNight, items, location) => {
             }
             if (!!mods[key]?.mod_mount) {
                 const mountResult = mods[key].mod_mount.filter((id) => scopeTypes.has(items[id]?._parent) ||
-                    checkIfChildHasScopes(id, items, scopeTypes, mods, mods[key].mod_mount.length < 3));
+                    checkIfChildHasScopes(id, items, scopeTypes, mods, true));
                 // console.log(key, items[key]._name, mods[key].mod_mount.length, mountResult.length)
                 if (mountResult.length)
                     mods[key].mod_mount = mountResult;
@@ -151,7 +165,7 @@ const updateScopes = (mods, isNight, items, location) => {
             ["mod_mount_001", "mod_mount_002", "mod_mount_003", "mod_mount_004"].forEach(mountType => {
                 if (!!mods[key]?.[mountType]) {
                     const mountResult = mods[key][mountType].filter((id) => !(0, utils_1.checkParentRecursive)(id, items, [utils_1.mountParent, utils_1.sightParent]) ||
-                        (items[id]?._parent === utils_1.mountParent && !mods[id].mod_scope) ||
+                        (items[id]?._parent === utils_1.mountParent && !mods[id]?.mod_scope) ||
                         scopeTypes.has(items[id]?._parent) ||
                         checkIfChildHasScopes(id, items, scopeTypes, mods, true));
                     // console.log(mountType, key, items[key]._name, mods[key][mountType].length, mountResult.length)

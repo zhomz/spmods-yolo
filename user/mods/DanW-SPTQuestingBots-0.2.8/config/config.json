@@ -7,7 +7,7 @@
 		"show_zone_outlines": false,
 		"show_failed_paths": false
 	},
-	"max_calc_time_per_frame_ms": 30,
+	"max_calc_time_per_frame_ms": 25,
 	"bot_pathing_update_interval_ms": 150,
 	"brain_layer_priority": 26,
 	"allowed_bot_types_for_questing": {
