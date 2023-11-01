@@ -114,7 +114,7 @@ export class TraderHelper
         this.addSingleItemToAssort(traderAssortTable, KEYCARDROLL_ID, true, keycardRollAmount, 1, Money.ROUBLES, cfg.configgy.keycard_roll, false, 0);
 
         const VIKSECRET_ID2 = "viktoriyas_secret";
-        this.addSingleItemToAssort(traderAssortTable, VIKSECRET_ID2, true, vsecretAmount, 2, Money.ROUBLES, cfg.configgy.viktoriyas_secret_roubles, false, 0);
+        this.addSingleItemToAssort(traderAssortTable, VIKSECRET_ID2, true, vsecretAmount, 2, Money.ROUBLES, cfg.configgy.viktoriyas_secret_rouble, false, 0);
 
         const VIKSECRET_ID = "viktoriyas_secret";
         this.addSingleItemToAssortBarter(traderAssortTable, VIKSECRET_ID, true, vsecretAmount, 1, 

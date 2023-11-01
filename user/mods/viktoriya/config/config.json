@@ -6,22 +6,43 @@
     "//Allow weapons": "This option will let you control if you want gun presets able to be purchased at max LL",
     "allowWeapons": false,
 
+    "//Logging": "This option will let you control if the logger into the console log when you open things into the console server",
+    "Logging": true,
+
     "//Use Realistic": "This option is to use realistic or uwu trader image",
-    "useRealistic": false,
+    "useRealistic": true,
 
     "//Buy limits": "True/false, if true buy limits be enforced, false, there will be none",
     "buy_limits": true,
 
+    "//Found In Raid Options": "Give you the choice of FIR or not to outcomes",
+    "//FIR Keycard Roll": "for Keycard Roll outcome",
+    "FIR_kcr": true,
+    "//FIR Keycard Roll Premium": "for Keycard Roll Premium outcome",
+    "FIR_kcpr": true,
+    "//FIR Viktoriyas Odds": "for Viktoriyas Odds outcome",
+    "FIR_vsc": true,
+    "//FIR Basic Armor Crate": "for Basic Armor Crate outcome",
+    "FIR_bac": true,
+    "//FIR Premium Armor Crate": "for Premium Armor Crate outcome",
+    "FIR_pac": true,
+    "//FIR 762 Weapon Crate": "for 762 Weapon Crate outcome",
+    "FIR_sstc": true,
+    "//FIR 545 Weapon Crate": "for 545 Weapon Crate outcome",
+    "FIR_fff": true,
+    "//FIR 556 Weapon Crate": "for 556 Weapon Crate outcome",
+    "FIR_ffs": true,
+
     "//Trader Options": "All trader options, will control prices, and stock",
     "//PRICES": "",
     "wallet_roll": 100000,
-    "keycard_roll": 500000,
+    "keycard_roll": 600000,
     "basic_armor": 72500,
     "premium_armor": 150000,
-    "weapon_case_762": 80000,
+    "weapon_case_762": 350000,
     "viktoriyas_secret_rouble": 350000,
-    "five_five_six": 80000,
-    "five_four_five": 80000,
+    "five_five_six": 350000,
+    "five_four_five": 350000,
 
     "//Viktoriya's Secret BOX": "THIS NUMBER IS A BARTER",
     "viktoriyas_secret": 3,
@@ -33,7 +54,7 @@
     "wr_two": 70,
     "wr_three": 93,
     "wr_four": 99,
-    "wr_five": 101,
+    "wr_five": 100,
 
     "//Keycard Roll": "Odds for keycard roll, make sure that each option is HIGHER than the previous",
     "kcr_one": 650,
@@ -46,7 +67,19 @@
     "kcr_eight": 1000,
 
     "//Oranament Voucher": "This is, lower the number the higher chance you get: this cannot be higher than 100",
-    "ornament_chance": 10,
+    "kcr_ornament_chance": 10,
+
+    "//Keycard Roll Premium": "Odds for keycard roll, make sure that each option is HIGHER than the previous",
+    "kcpr_one": 650,
+    "kcpr_two": 750,
+    "kcpr_three": 870,
+    "kcpr_four": 945,
+    "kcpr_five": 985,
+    "kcpr_six": 995,
+    "kcpr_seven": 1000,
+
+    "//Oranament Voucher Premium": "This is, lower the number the higher chance you get: this cannot be higher than 100",
+    "kcpr_ornament_chance": 70,
 
     "//Viktoriyas Odds": "Odds for Viktoriyas Case, make sure that each option is HIGHER than the previous",
     "vsc_one": 95,
@@ -149,5 +182,5 @@
     "ffs_eleven": 760,
     "ffs_twelve": 840,
     "ffs_thirteen": 920,
-    "ffs_fouteen": 1000
+    "ffs_fourteen": 1000
 }

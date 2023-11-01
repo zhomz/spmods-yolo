@@ -1,10 +1,10 @@
 {
     "name": "viktoriya",
-    "version": "0.9.3",
+    "version": "1.1.2",
     "main": "src/mod.js",
     "license": "MIT",
-    "author": "NikitaWaifu and Penntastic/PudgeNubbins",
-    "akiVersion": "~3.6",
+    "author": "NikitaWaifu and Penntastic/PudgeNubbins/Bobitec",
+    "akiVersion": "3.7.*",
     "scripts": {
         "setup": "npm i",
         "build": "node ./packageBuild.ts"

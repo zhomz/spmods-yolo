@@ -172,7 +172,7 @@ export class PresetCreateHelper
             _encyclopedia: ""
         }
         tables.globals.ItemPresets["mdr_vik"] = mdrvik;
-        // modded sag545
+
         const sag545Vik: IPreset = {
             _id: "sag545_vik",
             _type: "Preset",
@@ -184,19 +184,17 @@ export class PresetCreateHelper
         }
         tables.globals.ItemPresets["sag545_vik"] = sag545Vik;
 
-        // modded ak74m
         const ak74mVik: IPreset = {
             _id: "ak74m_vik",
             _type: "Preset",
             _changeWeaponName: false,
-            _name: "SAG 545 Vik For 545 case",
+            _name: "AK 74m Vik For 545 case",
             _parent: "ak74m_vik",
             _items: wepCreate.createAk74m(),
             _encyclopedia: ""
         }
         tables.globals.ItemPresets["ak74m_vik"] = ak74mVik;
 
-        // modded ak105
         const ak105Vik: IPreset = {
             _id: "ak105_vik",
             _type: "Preset",

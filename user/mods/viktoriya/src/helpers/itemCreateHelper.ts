@@ -107,8 +107,8 @@ export class ItemCreateHelper
                 _type: "Item"
                      
             },
-            fleaPriceRoubles: 69420,
-            handbookPriceRoubles: 69420,
+            fleaPriceRoubles: 110000,
+            handbookPriceRoubles: 110000,
             handbookParentId: "",
             locales: {
                 "en": {
@@ -215,8 +215,8 @@ export class ItemCreateHelper
                 _type: "Item"
                      
             },
-            fleaPriceRoubles: 69420,
-            handbookPriceRoubles: 69420,
+            fleaPriceRoubles: 550000,
+            handbookPriceRoubles: 550000,
             handbookParentId: "",
             locales: {
                 "en": {
@@ -320,8 +320,8 @@ export class ItemCreateHelper
                 _proto: "",
                 _type: "Item"
             },
-            fleaPriceRoubles: 99999999,
-            handbookPriceRoubles: 99999999,
+            fleaPriceRoubles: 385000,
+            handbookPriceRoubles: 385000,
             handbookParentId: "",
             locales: {
                 "en": {
@@ -425,8 +425,8 @@ export class ItemCreateHelper
                 _proto: "",
                 _type: "Item"
             },
-            fleaPriceRoubles: 99999999,
-            handbookPriceRoubles: 99999999,
+            fleaPriceRoubles: 79750,
+            handbookPriceRoubles: 79750,
             handbookParentId: "",
             locales: {
                 "en": {
@@ -530,8 +530,8 @@ export class ItemCreateHelper
                 _proto: "",
                 _type: "Item"
             },
-            fleaPriceRoubles: 99999999,
-            handbookPriceRoubles: 99999999,
+            fleaPriceRoubles: 165000,
+            handbookPriceRoubles: 165000,
             handbookParentId: "",
             locales: {
                 "en": {
@@ -635,8 +635,8 @@ export class ItemCreateHelper
                 _proto: "",
                 _type: "Item"
             },
-            fleaPriceRoubles: 99999999,
-            handbookPriceRoubles: 99999999,
+            fleaPriceRoubles: 88000,
+            handbookPriceRoubles: 88000,
             handbookParentId: "",
             locales: {
                 "en": {
@@ -740,8 +740,8 @@ export class ItemCreateHelper
                 _proto: "",
                 _type: "Item"
             },
-            fleaPriceRoubles: 100000,
-            handbookPriceRoubles: 100000,
+            fleaPriceRoubles: 165000,
+            handbookPriceRoubles: 165000,
             handbookParentId: "",
             locales: {
                 "en": {
@@ -845,8 +845,8 @@ export class ItemCreateHelper
                 _proto: "",
                 _type: "Item"
             },
-            fleaPriceRoubles: 99999999,
-            handbookPriceRoubles: 99999999,
+            fleaPriceRoubles: 88000,
+            handbookPriceRoubles: 88000,
             handbookParentId: "",
             locales: {
                 "en": {
@@ -951,8 +951,8 @@ export class ItemCreateHelper
                 _type: "Item"
                      
             },
-            fleaPriceRoubles: 69420,
-            handbookPriceRoubles: 69420,
+            fleaPriceRoubles: 5500000,
+            handbookPriceRoubles: 5500000,
             handbookParentId: "",
             locales: {
                 "en": {
@@ -1057,8 +1057,8 @@ export class ItemCreateHelper
                 _type: "Item"
                      
             },
-            fleaPriceRoubles: 69420,
-            handbookPriceRoubles: 69420,
+            fleaPriceRoubles: 6500000,
+            handbookPriceRoubles: 6500000,
             handbookParentId: "",
             locales: {
                 "en": {
@@ -1162,8 +1162,8 @@ export class ItemCreateHelper
                 _proto: "",
                 _type: "Item"
             },
-            fleaPriceRoubles: 99999999,
-            handbookPriceRoubles: 99999999,
+            fleaPriceRoubles: 88000,
+            handbookPriceRoubles: 88000,
             handbookParentId: "",
             locales: {
                 "en": {

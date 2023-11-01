@@ -3,10 +3,10 @@
     {
         "QuestName": "A small loan of a million roubles",
         "_id": "small_loan",
-        "acceptPlayerMessage": "Find and turn in 3 bitcoins",
+        "acceptPlayerMessage": "small_loan acceptPlayerMessage",
         "canShowNotificationsInGame": true,
-        "changeQuestMessageText": "Hurry up and find them",
-        "completePlayerMessage": "Good job, you found them",
+        "changeQuestMessageText": "small_loan changeQuestMessageText",
+        "completePlayerMessage": "small_loan completePlayerMessage",
         "conditions": {
           "AvailableForFinish": [
             {
@@ -15,7 +15,7 @@
                 "countInRaid": false,
                 "dogtagLevel": 0,
                 "dynamicLocale": false,
-                "id": "Found Bitcoins",
+                "id": "small_loan TEXT1",
                 "index": 0,
                 "isEncoded": false,
                 "maxDurability": 100,
@@ -35,7 +35,7 @@
               "_props": {
                 "dogtagLevel": 0,
                 "dynamicLocale": false,
-                "id": "Bitcoins turned in",
+                "id": "small_loan TEXT2",
                 "index": 1,
                 "isEncoded": false,
                 "maxDurability": 100,
@@ -54,14 +54,14 @@
           "AvailableForStart": [],
           "Fail": []
         },
-        "description": "We're having temporary financial problems, I need you to loan me some money. Our transactions cannot be tracked, therefore I'd prefer bitcoins over bank transfer.",
-        "failMessageText": "You failed",
+        "description": "small_loan description",
+        "failMessageText": "small_loan failMessageText",
         "image": "/files/quest/icon/59689e1c86f7740d14064725.jpg",
         "instantComplete": false,
         "isKey": false,
         "location": "any",
-        "name": "A small loan of million roubles",
-        "note": "Waiting on 3 bitcoins",
+        "name": "small_loan name",
+        "note": "small_loan note",
         "questStatus": {},
         "restartable": false,
         "rewards": {
@@ -102,8 +102,8 @@
         },
         "secretQuest": false,
         "side": "Pmc",
-        "startedMessageText": "Get those bitcoins",
-        "successMessageText": "You got them, thank you!",
+        "startedMessageText": "small_loan startedMessageText",
+        "successMessageText": "small_loan successMessageText",
         "templateId": "small_loan",
         "traderId": "viktoriya",
         "type": "PickUp"
@@ -112,10 +112,10 @@
     {
         "QuestName": "Addict Pt. 1",
         "_id": "addict_pt_1",
-        "acceptPlayerMessage": "Purchase 10 Wallets",
+        "acceptPlayerMessage": "addict_pt_1 acceptPlayerMessage",
         "canShowNotificationsInGame": true,
-        "changeQuestMessageText": "Gamble away! Purchase 10 wallets!",
-        "completePlayerMessage": "How'd that feel?",
+        "changeQuestMessageText": "addict_pt_1 changeQuestMessageText",
+        "completePlayerMessage": "addict_pt_1 completePlayerMessage",
         "conditions": {
             "AvailableForFinish": [
                 {
@@ -124,7 +124,7 @@
                         "countInRaid": false,
                         "dogtagLevel": 0,
                         "dynamicLocale": false,
-                        "id": "Purchased Wallets",
+                        "id": "addict_pt_1 TEXT1",
                         "index": 0,
                         "isEncoded": false,
                         "maxDurability": 100,
@@ -160,14 +160,14 @@
             ],
             "Fail": []
         },
-        "description": "The Gambler in me, wants to see the gambler in you, please sit down and lets gamble!",
-        "failMessageText": "You failed",
+        "description": "addict_pt_1 description",
+        "failMessageText": "addict_pt_1 failMessageText",
         "image": "/files/quest/icon/59689e1c86f7740d14064725.jpg",
         "instantComplete": false,
         "isKey": false,
         "location": "any",
-        "name": "Addict Pt. 1",
-        "note": "Purchase 10 wallets",
+        "name": "addict_pt_1 name",
+        "note": "addict_pt_1 note",
         "questStatus": {},
         "restartable": false,
         "rewards": {
@@ -208,8 +208,8 @@
         },
         "secretQuest": false,
         "side": "Pmc",
-        "startedMessageText": "Purchase those wallets",
-        "successMessageText": "Good job gambler!",
+        "startedMessageText": "addict_pt_1 startedMessageText",
+        "successMessageText": "addict_pt_1 successMessageText",
         "templateId": "addict_pt_1",
         "traderId": "viktoriya",
         "type": "Pickup"
@@ -218,10 +218,10 @@
     {
         "QuestName": "Addict Pt. 2",
         "_id": "addict_pt_2",
-        "acceptPlayerMessage": "Purchase 5 Keycard Rolls",
+        "acceptPlayerMessage": "addict_pt_2 acceptPlayerMessage",
         "canShowNotificationsInGame": true,
-        "changeQuestMessageText": "Gamble away! Purchase 5 keycard rolls!",
-        "completePlayerMessage": "How'd that feel?",
+        "changeQuestMessageText": "addict_pt_2 changeQuestMessageText",
+        "completePlayerMessage": "addict_pt_2 completePlayerMessage",
         "conditions": {
             "AvailableForFinish": [
                 {
@@ -230,7 +230,7 @@
                         "countInRaid": false,
                         "dogtagLevel": 0,
                         "dynamicLocale": false,
-                        "id": "Keycard Rolls",
+                        "id": "addict_pt_2 TEXT1",
                         "index": 0,
                         "isEncoded": false,
                         "maxDurability": 100,
@@ -266,14 +266,14 @@
             ],
             "Fail": []
         },
-        "description": "The Gambler in me, wants to see the gambler in you, please sit down and lets gamble!",
-        "failMessageText": "You failed",
+        "description": "addict_pt_2 description",
+        "failMessageText": "addict_pt_2 failMessageText",
         "image": "/files/quest/icon/59689e1c86f7740d14064725.jpg",
         "instantComplete": false,
         "isKey": false,
         "location": "any",
-        "name": "Addict Pt. 2",
-        "note": "Purchase 5 keycard rolls",
+        "name": "addict_pt_2 name",
+        "note": "addict_pt_2 note",
         "questStatus": {},
         "restartable": false,
         "rewards": {
@@ -314,8 +314,8 @@
         },
         "secretQuest": false,
         "side": "Pmc",
-        "startedMessageText": "Purchase those keycard rolls",
-        "successMessageText": "Good job gambler!",
+        "startedMessageText": "addict_pt_2 startedMessageText",
+        "successMessageText": "addict_pt_2 successMessageText",
         "templateId": "addict_pt_2",
         "traderId": "viktoriya",
         "type": "Pickup"
@@ -324,10 +324,10 @@
     {
       "QuestName": "Snitches Get Stitches",
       "_id": "snitches_stitches",
-      "acceptPlayerMessage": "This fucker is getting on my nerves. No mercy!",
+      "acceptPlayerMessage": "snitches_stitches acceptPlayerMessage",
       "canShowNotificationsInGame": true,
-      "changeQuestMessageText": "Kill Shturman",
-      "completePlayerMessage": "Thank you for taking the trash out. It is much appreciated.",
+      "changeQuestMessageText": "snitches_stitches changeQuestMessageText",
+      "completePlayerMessage": "snitches_stitches completePlayerMessage",
       "conditions": {
         "AvailableForFinish": [
           {
@@ -352,12 +352,12 @@
               },
               "doNotResetIfCounterCompleted": false,
               "dynamicLocale": false,
-              "id": "Shturman Kills",
+              "id": "snitches_stitches TEXT1",
               "index": 0,
               "oneSessionOnly": false,
               "parentId": "",
               "type": "Elimination",
-              "value": "3",
+              "value": "1",
               "visibilityConditions": []
             },
             "dynamicLocale": false
@@ -396,14 +396,14 @@
         ],
         "Fail": []
       },
-      "description": "This fucker decided to tell the scavs where I was. He is responsible for the losses. Kill the bastard Shturman 3 times.",
-      "failMessageText": "Failed",
+      "description": "snitches_stitches description",
+      "failMessageText": "snitches_stitches failMessageText",
       "image": "/files/quest/icon/596b465486f77457ca186188.jpg",
       "instantComplete": false,
       "isKey": false,
       "location": "any",
-      "name": "Snitches Get Stitches",
-      "note": "Kill Shturman 3 times.",
+      "name": "snitches_stitches name",
+      "note": "snitches_stitches note",
       "questStatus": {},
       "restartable": false,
       "rewards": {
@@ -444,8 +444,8 @@
       },
       "secretQuest": false,
       "side": "Pmc",
-      "startedMessageText": "You are tasked with killing Shturman",
-      "successMessageText": "Thank you for taking care of that mongrel. Enjoy your rewards.",
+      "startedMessageText": "snitches_stitches startedMessageText",
+      "successMessageText": "snitches_stitches successMessageText",
       "templateId": "snitches_stitches",
       "traderId": "viktoriya",
       "type": "Elimination"
@@ -454,10 +454,10 @@
     {
       "QuestName": "Resupply",
       "_id": "resupply_v",
-      "acceptPlayerMessage": "We have recently been and need to arm ourselves. We need two modded AK-74ns with EOTech XPS3-0, Bastion and Silencer Co. Hybrid 46 multi-caliber sound suppressor, a Magazine included. Plus four PACA. All of this must be full durability",
+      "acceptPlayerMessage": "resupply_v acceptPlayerMessage",
       "canShowNotificationsInGame": true,
-      "changeQuestMessageText": "We have recently been and need to arm ourselves. We need two modded AK-74ns with EOTech XPS3-0, Bastion and Silencer Co. Hybrid 46 multi-caliber sound suppressor, a Magazine included. Plus four PACA. All of this must be full durability",
-      "completePlayerMessage": "This will help us greatly. Thank you.",
+      "changeQuestMessageText": "resupply_v changeQuestMessageText",
+      "completePlayerMessage": "resupply_v completePlayerMessage",
       "conditions": {
         "AvailableForFinish": [
           {
@@ -492,7 +492,7 @@
                 "compareMethod": ">=",
                 "value": 0
               },
-              "id": "AK-74n Turned in",
+              "id": "resupply_v TEXT1",
               "index": 0,
               "magazineCapacity": {
                 "compareMethod": ">=",
@@ -505,7 +505,7 @@
               "parentId": "",
               "recoil": {
                 "compareMethod": ">=",
-                "value": "0"
+                "value": 0
               },
               "target": [
                 "5644bd2b4bdc2d3b4c8b4572"
@@ -528,7 +528,7 @@
             "_props": {
               "dogtagLevel": 0,
               "dynamicLocale": false,
-              "id": "PACA Turned In",
+              "id": "resupply_v TEXT2",
               "index": 1,
               "isEncoded": false,
               "maxDurability": 100,
@@ -577,14 +577,14 @@
         ],
         "Fail": []
       },
-      "description": "We need two modded AK-74ns with EOTech XPS3-0 and Silencer Co. Hybrid 46 multi-caliber sound suppressor, a Magazine included. Plus four PACA. All of this must be full durability.",
-      "failMessageText": "Failed",
+      "description": "resupply_v description",
+      "failMessageText": "resupply_v failMessageText",
       "image": "/files/quest/icon/596b465486f77457ca186188.jpg",
       "instantComplete": false,
       "isKey": false,
       "location": "any",
-      "name": "Resupply",
-      "note": "We have recently been and need to arm ourselves. We need two modded AK-74ns with EOTech XPS3-0, Bastion and Silencer Co. Hybrid 46 multi-caliber sound suppressor, a Magazine included. Plus four PACA. All of this must be full durability",
+      "name": "resupply_v name",
+      "note": "resupply_v note",
       "questStatus": {},
       "restartable": false,
       "rewards": {
@@ -642,8 +642,8 @@
       },
       "secretQuest": false,
       "side": "Pmc",
-      "startedMessageText": "Please, get us the mentioned supplies.",
-      "successMessageText": "Thank you for supplying us with what we needed! Those bastards will not know what them sshould they fuck with us again.",
+      "startedMessageText": "resupply_v startedMessageText",
+      "successMessageText": "resupply_v successMessageText",
       "templateId": "resupply_v",
       "traderId": "viktoriya",
       "type": "WeaponAssembly"
@@ -652,10 +652,10 @@
     {
       "QuestName": "Revenge",
       "_id": "revenge_v",
-      "acceptPlayerMessage": "The scavs have become quite cocky of late. Take out their knees. Kill 4 scavs buy their legs. Send a message. This is just business.",
+      "acceptPlayerMessage": "revenge_v acceptPlayerMessage",
       "canShowNotificationsInGame": true,
-      "changeQuestMessageText": "Kill these scavs by their legs. Make them regret their actions.",
-      "completePlayerMessage": "It is what these fuckers deserve. Thank you for your work.",
+      "changeQuestMessageText": "revenge_v changeQuestMessageText",
+      "completePlayerMessage": "revenge_v completePlayerMessage",
       "conditions": {
         "AvailableForFinish": [
           {
@@ -681,7 +681,7 @@
               },
               "doNotResetIfCounterCompleted": false,
               "dynamicLocale": false,
-              "id": "Scavs killed by legs",
+              "id": "revenge_v TEXT1",
               "index": 0,
               "oneSessionOnly": false,
               "parentId": "",
@@ -725,14 +725,14 @@
         ],
         "Fail": []
       },
-      "description": "The scavs are too confident. Kill 4 by taking out their knees.",
-      "failMessageText": "Failed",
+      "description": "revenge_v description",
+      "failMessageText": "revenge_v failMessageText",
       "image": "/files/quest/icon/596b465486f77457ca186188.jpg",
       "instantComplete": false,
       "isKey": false,
       "location": "any",
-      "name": "Revenge",
-      "note": "Kill 4 scavs by legs",
+      "name": "revenge_v name",
+      "note": "revenge_v note",
       "questStatus": {},
       "restartable": false,
       "rewards": {
@@ -773,9 +773,9 @@
       },
       "secretQuest": false,
       "side": "Pmc",
-      "startedMessageText": "Take out those scavs.",
-      "successMessageText": "Thank you for your hard work!.",
-      "templateId": "resupply_v",
+      "startedMessageText": "revenge_v startedMessageText",
+      "successMessageText": "revenge_v successMessageText",
+      "templateId": "revenge_v",
       "traderId": "viktoriya",
       "type": "Elimination"
     },
@@ -783,10 +783,10 @@
     {
       "QuestName": "I'm the one who knocks",
       "_id": "who_knocks",
-      "acceptPlayerMessage": "Your work has been impressive so far. I am impressed. Maybe you can do this for me. I need Killa slain. He runs Tarkov and controls the scavs. We need him dead. I want you to kill him, and then bring me his helmet with at least 85 durability.",
+      "acceptPlayerMessage": "who_knocks acceptPlayerMessage",
       "canShowNotificationsInGame": true,
-      "changeQuestMessageText": "Your work has been impressive so far. I am impressed. Maybe you can do this for me. I need Killa slain. He runs Tarkov and controls the scavs. We need him dead. I want you to kill him, and then bring me his helmet with at least 85 durability.",
-      "completePlayerMessage": "You have done it! I thank you. Me and my men will have an easier time navigating through Tarkov and the casino is no longer in threat. You have my full gratitude.",
+      "changeQuestMessageText": "who_knocks changeQuestMessageText",
+      "completePlayerMessage": "who_knocks completePlayerMessage",
       "conditions": {
         "AvailableForFinish": [
           {
@@ -811,7 +811,7 @@
               },
               "doNotResetIfCounterCompleted": false,
               "dynamicLocale": false,
-              "id": "Killa killed",
+              "id": "who_knocks TEXT1",
               "index": 0,
               "oneSessionOnly": false,
               "parentId": "",
@@ -826,7 +826,7 @@
             "_props": {
               "dogtagLevel": 0,
               "dynamicLocale": false,
-              "id": "Maska-1SCh BP Helmet (Killa) turned in",
+              "id": "who_knocks TEXT2",
               "index": 1,
               "isEncoded": false,
               "maxDurability": 110,
@@ -891,14 +891,14 @@
         ],
         "Fail": []
       },
-      "description": "Your work has been impressive so far. I am impressed. Maybe you can do this for me. I need Killa slain. He runs Tarkov and controls the scavs. We need him dead. I want you to kill him, and then bring me his helmet with at least 85 durability.",
-      "failMessageText": "Failed",
+      "description": "who_knocks description",
+      "failMessageText": "who_knocks failMessageText",
       "image": "/files/quest/icon/596b465486f77457ca186188.jpg",
       "instantComplete": false,
       "isKey": false,
       "location": "any",
-      "name": "I'm the one who knocks",
-      "note": "Your work has been impressive so far. I am impressed. Maybe you can do this for me. I need Killa slain. He runs Tarkov and controls the scavs. We need him dead. I want you to kill him, and then bring me his helmet with at least 85 durability.",
+      "name": "who_knocks name",
+      "note": "who_knocks note",
       "questStatus": {},
       "restartable": false,
       "rewards": {
@@ -939,8 +939,8 @@
       },
       "secretQuest": false,
       "side": "Pmc",
-      "startedMessageText": "Your work has been impressive so far. I am impressed. Maybe you can do this for me. I need Killa slain. He runs Tarkov and controls the scavs. We need him dead. I want you to kill him, and then bring me his helmet with at least 85 durability.",
-      "successMessageText": "You have done it! I thank you. Me and my men will have an easier time navigating through Tarkov and the casino is no longer in threat. You have my full gratitude.",
+      "startedMessageText": "who_knocks startedMessageText",
+      "successMessageText": "who_knocks successMessageText",
       "templateId": "who_knocks",
       "traderId": "viktoriya",
       "type": "Elimination"
@@ -950,9 +950,9 @@
       "QuestName": "Blackmail",
       "_id": "blackmail_quest",
       "canShowNotificationsInGame": true,
-      "acceptPlayerMessage": "My people have sniffed out some people that have been conspiring against me. Unfortunately, the messenger has been slain in labs, he was thankfully able to stash his evidence before his murder. Please go get it, the report says he hid it in the cafe in the labs. Please hurry and get it.",
-      "changeQuestMessageText": "My people have sniffed out some people that have been conspiring against me. Unfortunately, the messenger has been slain in labs, he was thankfully able to stash his evidence before his murder. Please go get it, the report says he hid it in the cafe in the labs. Please hurry and get it.",
-      "completePlayerMessage": "DAMN IT! Those fuckers must have found it first. We are going to have to get creative now.",
+      "acceptPlayerMessage": "blackmail_quest acceptPlayerMessage",
+      "changeQuestMessageText": "blackmail_quest changeQuestMessageText",
+      "completePlayerMessage": "blackmail_quest completePlayerMessage",
       "conditions": {
         "AvailableForFinish": [
           {
@@ -971,15 +971,16 @@
                   }
                 ]
               },
-              "id": "Visit Labs Cafe",
+              "id": "blackmail_quest TEXT1",
               "index": 0,
               "parentId": "",
-              "oneSessionOnly": true,
+              "oneSessionOnly": false,
               "dynamicLocale": false,
               "type": "Exploration",
               "doNotResetIfCounterCompleted": false,
               "value": "1",
-              "visibilityConditions": []
+              "visibilityConditions": [],
+              "zoneId": "labCafe"
             },
             "dynamicLocale": false
           },
@@ -1008,7 +1009,7 @@
                   }
                 ]
               },
-              "id": "Exfil through Parking gate",
+              "id": "blackmail_quest TEXT2",
               "index": 0,
               "parentId": "",
               "oneSessionOnly": false,
@@ -1042,7 +1043,7 @@
               "index": 1,
               "parentId": "",
               "dynamicLocale": false,
-              "target": "snitches_stiches",
+              "target": "snitches_stitches",
               "status": [
                 4
               ],
@@ -1054,10 +1055,10 @@
         ],
         "Fail": []
       },
-      "description": "",
-      "failMessageText": "You failed try again.",
-      "name": "Blackmail",
-      "note": "My people have sniffed out some people that have been conspiring against me. Unfortunately, the messenger has been slain in labs, he was thankfully able to stash his evidence before his murder. Please go get it, the report says he hid it in the cafe in the labs. Please hurry and get it.",
+      "description": "blackmail_quest description",
+      "failMessageText": "blackmail_quest failMessageText",
+      "name": "blackmail_quest name",
+      "note": "blackmail_quest note",
       "questStatus": {},
       "traderId": "viktoriya",
       "location": "5b0fc42d86f7744a585f9105",
@@ -1067,9 +1068,9 @@
       "restartable": false,
       "instantComplete": false,
       "secretQuest": false,
-      "startedMessageText": "My people have sniffed out some people that have been conspiring against me. Unfortunately, the messenger has been slain in labs, he was thankfully able to stash his evidence before his murder. Please go get it, the report says he hid it in the cafe in the labs. Please hurry and get it.",
-      "successMessageText": "DAMN IT! Those fuckers must have found it first. We are going to have to get creative now.",
-      "templateId": "blackmail",
+      "startedMessageText": "blackmail_quest startedMessageText",
+      "successMessageText": "blackmail_quest successMessageText",
+      "templateId": "blackmail_quest",
       "rewards": {
         "Started": [],
         "Success": [
@@ -1113,16 +1114,16 @@
       "QuestName": "Addict Pt. 3",
       "_id": "addict_pt_3",
       "canShowNotificationsInGame": true,
-      "acceptPlayerMessage": "My men need access into labs. We will need a few keycards for this. I highly suggest you use my gambling services for this, however, I wil ltake them however you get them. I will need: 15 Labs access key cards, found in raid. 1 Yellow Keycard found in raid. And 1 black keycard, it does not matter if it is found in raid.",
-      "changeQuestMessageText": "My men need access into labs. We will need a few keycards for this. I highly suggest you use my gambling services for this, however, I wil ltake them however you get them. I will need: 15 Labs access key cards, found in raid. 1 Yellow Keycard found in raid. And 1 black keycard, it does not matter if it is found in raid.",
-      "completePlayerMessage": "addict pt 3",
+      "acceptPlayerMessage": "addict_pt_3 acceptPlayerMessage",
+      "changeQuestMessageText": "addict_pt_3 changeQuestMessageText",
+      "completePlayerMessage": "addict_pt_3 completePlayerMessage",
       "conditions": {
         "AvailableForFinish": [
           {
             "_parent": "HandoverItem",
             "_props": {
               "dogtagLevel": 0,
-              "id": "Lab Access Cards Found In Raid",
+              "id": "addict_pt_3 TEXT1",
               "index": 1,
               "maxDurability": 100,
               "minDurability": 0,
@@ -1142,7 +1143,7 @@
             "_parent": "HandoverItem",
             "_props": {
               "dogtagLevel": 0,
-              "id": "Keycard Yellow Found in Raid",
+              "id": "addict_pt_3 TEXT2",
               "index": 1,
               "maxDurability": 100,
               "minDurability": 0,
@@ -1162,7 +1163,7 @@
             "_parent": "HandoverItem",
             "_props": {
               "dogtagLevel": 0,
-              "id": "Keycard Black",
+              "id": "addict_pt_3 TEXT3",
               "index": 1,
               "maxDurability": 100,
               "minDurability": 0,
@@ -1187,10 +1188,8 @@
               "index": 0,
               "parentId": "",
               "dynamicLocale": false,
-              "target": "blackmail",
-              "status": [
-                4
-              ],
+              "target": "blackmail_quest",
+              "status": [4],
               "availableAfter": 0,
               "dispersion": 0,
               "visibilityConditions": []
@@ -1200,10 +1199,10 @@
         ],
         "Fail": []
       },
-      "description": "My men need access into labs. We will need a few keycards for this. I highly suggest you use my gambling services for this, however, I wil ltake them however you get them. I will need: 15 Labs access key cards, found in raid. 1 Yellow Keycard found in raid. And 1 black keycard, it does not matter if it is found in raid.",
-      "failMessageText": "you failed",
-      "name": "addict pt 3",
-      "note": "My men need access into labs. We will need a few keycards for this. I highly suggest you use my gambling services for this, however, I wil ltake them however you get them. I will need: 15 Labs access key cards, found in raid. 1 Yellow Keycard found in raid. And 1 black keycard, it does not matter if it is found in raid.",
+      "description": "addict_pt_3 description",
+      "failMessageText": "addict_pt_3 failMessageText",
+      "name": "addict_pt_3 name",
+      "note": "addict_pt_3 note",
       "questStatus": {},
       "traderId": "viktoriya",
       "location": "any",
@@ -1213,9 +1212,9 @@
       "restartable": false,
       "instantComplete": false,
       "secretQuest": false,
-      "startedMessageText": "My men need access into labs. We will need a few keycards for this. I highly suggest you use my gambling services for this, however, I wil ltake them however you get them. I will need: 15 Labs access key cards, found in raid. 1 Yellow Keycard found in raid. And 1 black keycard, it does not matter if it is found in raid.",
-      "successMessageText": "This will definitely help my men going forward. Thank you for your help.",
-      "templateId": "addict pt 3",
+      "startedMessageText": "addict_pt_3 startedMessageText",
+      "successMessageText": "addict_pt_3 successMessageText",
+      "templateId": "addict_pt_3",
       "rewards": {
         "Started": [],
         "Success": [
@@ -1259,7 +1258,9 @@
       "QuestName": "Spying Operation",
       "_id": "spying_operation",
       "canShowNotificationsInGame": true,
-      "changeQuestMessageText": "My men are having trouble setting up cameras for me. It seems the opposition know who exactly my men are. I will need for you to setup cameras for my men to spy on these people. We know where mostly where they go in labs. We need a camera between the violet room and the red room. The second camera needs to be placed between Sanitar's stash and the Green Keycard room. This will help greatly!",
+      "acceptPlayerMessage": "spying_operation acceptPlayerMessage",
+      "changeQuestMessageText": "spying_operation changeQuestMessageText",
+      "completePlayerMessage": "spying_operation completePlayerMessage",
       "conditions": {
           "AvailableForFinish": [
               {
@@ -1267,8 +1268,8 @@
                   "_props": {
                       "dogtagLevel": 0,
                       "dynamicLocale": false,
-                      "id": "Leave a camera between red and violet security rooms",
-                      "index": 1,
+                      "id": "spying_operation TEXT1",
+                      "index": 0,
                       "maxDurability": 100,
                       "minDurability": 0,
                       "onlyFoundInRaid": false,
@@ -1286,8 +1287,8 @@
                 "_props": {
                     "dogtagLevel": 0,
                     "dynamicLocale": false,
-                    "id": "Place camera zone around Sanitar's Stash",
-                    "index": 2,
+                    "id": "spying_operation TEXT2",
+                    "index": 1,
                     "maxDurability": 100,
                     "minDurability": 0,
                     "onlyFoundInRaid": false,
@@ -1331,10 +1332,10 @@
           ],
           "Fail": []
       },
-      "description": "My men are having trouble setting up cameras for me. It seems the opposition know who exactly my men are. I will need for you to setup cameras for my men to spy on these people. We know where mostly where they go in labs. We need a camera between the violet room and the red room. The second camera needs to be placed between Sanitar's stash and the Green Keycard room. This will help greatly!",
-      "failMessageText": "spying operation failMessageText",
-      "name": "Spying Operation",
-      "note": "My men are having trouble setting up cameras for me. It seems the opposition know who exactly my men are. I will need for you to setup cameras for my men to spy on these people. We know where mostly where they go in labs. We need a camera between the violet room and the red room. The second camera needs to be placed between Sanitar's stash and the Green Keycard room. This will help greatly!",
+      "description": "spying_operation description",
+      "failMessageText": "spying_operation failMessageText",
+      "name": "spying_operation name",
+      "note": "spying_operation note",
       "traderId": "viktoriya",
       "location": "5b0fc42d86f7744a585f9105",
       "image": "/files/quest/icon/gk_6thumbnail.png",
@@ -1343,8 +1344,8 @@
       "restartable": false,
       "instantComplete": false,
       "secretQuest": false,
-      "startedMessageText": "My men are having trouble setting up cameras for me. It seems the opposition know who exactly my men are. I will need for you to setup cameras for my men to spy on these people. We know where mostly where they go in labs. We need a camera between the violet room and the red room. The second camera needs to be placed between Sanitar's stash and the Green Keycard room. This will help greatly!",
-      "successMessageText": "HA! Fuck those guys! Thanks to you, my men have taken care of this problem. However, there is another group they have found out about. This has gone deeper than we have first thought.",
+      "startedMessageText": "spying_operation startedMessageText",
+      "successMessageText": "spying_operation successMessageText",
       "templateId": "spying_operation",
       "rewards": {
           "Started": [],
@@ -1389,7 +1390,9 @@
       "QuestName": "Bait",
       "_id": "bait_quest",
       "canShowNotificationsInGame": true,
-      "changeQuestMessageText": "This one will be quite the undertaken. We have found three different groups that are left, and they are being a pain in the ass to my men. The first group is know, to hang around the dorms. We need you to bait them nicely in dorm marked room 314, place a Camera and Lion in this room. The second room is the RB-BK room in reserve. Bait this marked room with a Camera and a Golden chain. The third room is the marked room in shoreline in the shoreline resort, place a camera and tank battery. With this, the threat will be taken care of.",
+      "acceptPlayerMessage": "bait_quest acceptPlayerMessage",
+      "changeQuestMessageText": "bait_quest changeQuestMessageText",
+      "completePlayerMessage": "bait_quest completePlayerMessage",
       "conditions": {
           "AvailableForFinish": [
               {
@@ -1397,7 +1400,7 @@
                   "_props": {
                       "dogtagLevel": 0,
                       "dynamicLocale": false,
-                      "id": "Stash Camera in Marked room 314",
+                      "id": "bait_quest TEXT1",
                       "index": 0,
                       "maxDurability": 100,
                       "minDurability": 0,
@@ -1416,7 +1419,7 @@
                 "_props": {
                     "dogtagLevel": 0,
                     "dynamicLocale": false,
-                    "id": "Stash Lion in Marked room 314",
+                    "id": "bait_quest TEXT2",
                     "index": 1,
                     "maxDurability": 100,
                     "minDurability": 0,
@@ -1435,7 +1438,7 @@
                 "_props": {
                     "dogtagLevel": 0,
                     "dynamicLocale": false,
-                    "id": "Stash Camers in marked RB-BK",
+                    "id": "bait_quest TEXT3",
                     "index": 2,
                     "maxDurability": 100,
                     "minDurability": 0,
@@ -1454,7 +1457,7 @@
                 "_props": {
                     "dogtagLevel": 0,
                     "dynamicLocale": false,
-                    "id": "Stash Golden Chain in marked RB-BK",
+                    "id": "bait_quest TEXT4",
                     "index": 3,
                     "maxDurability": 100,
                     "minDurability": 0,
@@ -1473,7 +1476,7 @@
                 "_props": {
                     "dogtagLevel": 0,
                     "dynamicLocale": false,
-                    "id": "Stash Camera in marked shoreline room",
+                    "id": "bait_quest TEXT5",
                     "index": 4,
                     "maxDurability": 100,
                     "minDurability": 0,
@@ -1492,7 +1495,7 @@
                 "_props": {
                     "dogtagLevel": 0,
                     "dynamicLocale": false,
-                    "id": "Stash 6-STEN-140-M Military Battery in marked shoreline room",
+                    "id": "bait_quest TEXT6",
                     "index": 5,
                     "maxDurability": 100,
                     "minDurability": 0,
@@ -1537,10 +1540,10 @@
           ],
           "Fail": []
       },
-      "description": "This one will be quite the undertaken. We have found three different groups that are left, and they are being a pain in the ass to my men. The first group is know, to hang around the dorms. We need you to bait them nicely in dorm marked room 314, place a Camera and Lion in this room. The second room is the RB-BK room in reserve. Bait this marked room with a Camera and a Golden chain. The third room is the marked room in shoreline in the shoreline resort, place a camera and tank battery. With this, the threat will be taken care of.",
-      "failMessageText": "bait failMessageText",
-      "name": "Bait",
-      "note": "This one will be quite the undertaken. We have found three different groups that are left, and they are being a pain in the ass to my men. The first group is know, to hang around the dorms. We need you to bait them nicely in dorm marked room 314, place a Camera and Lion in this room. The second room is the RB-BK room in reserve. Bait this marked room with a Camera and a Golden chain. The third room is the marked room in shoreline in the shoreline resort, place a camera and tank battery. With this, the threat will be taken care of.",
+      "description": "bait_quest description",
+      "failMessageText": "bait_quest failMessageText",
+      "name": "bait_quest name",
+      "note": "bait_quest note",
       "traderId": "viktoriya",
       "location": "any",
       "image": "/files/quest/icon/gk_6thumbnail.png",
@@ -1549,9 +1552,9 @@
       "restartable": false,
       "instantComplete": false,
       "secretQuest": false,
-      "startedMessageText": "This one will be quite the undertaken. We have found three different groups that are left, and they are being a pain in the ass to my men. The first group is know, to hang around the dorms. We need you to bait them nicely in dorm marked room 314, place a Camera and Lion in this room. The second room is the RB-BK room in reserve. Bait this marked room with a Camera and a Golden chain. The third room is the marked room in shoreline in the shoreline resort, place a camera and tank battery. With this, the threat will be taken care of.",
-      "successMessageText": "Thank you! With your help all threats have been taken care of for now.",
-      "templateId": "bait_operation",
+      "startedMessageText": "bait_quest startedMessageText",
+      "successMessageText": "bait_quest successMessageText",
+      "templateId": "bait_quest",
       "rewards": {
           "Started": [],
           "Success": [
@@ -1595,16 +1598,15 @@
       "QuestName": "Impression Part 1",
       "_id": "impression_part_1",
       "canShowNotificationsInGame": true,
-      "acceptPlayerMessage": "You have earned my trust, however I will need you to prove yourself for the task at hand. For now I would like you take out 3 scavs with the M-2 Tactical Sword.",
-      "changeQuestMessageText": "You have earned my trust, however I will need you to prove yourself for the task at hand. For now I would like you take out 3 scavs with the M-2 Tactical Sword.",
-      "completePlayerMessage": "Great Job! Well done, but what I have in mind will need more skills for this.",
+      "acceptPlayerMessage": "impression_part_1 acceptPlayerMessage",
+      "changeQuestMessageText": "impression_part_1 changeQuestMessageText",
+      "completePlayerMessage": "impression_part_1 completePlayerMessage",
       "conditions": {
         "AvailableForFinish": [
           {
             "_parent": "CounterCreator",
             "_props": {
               "counter": {
-                "id": "impression_part_1_aff_0",
                 "conditions": [
                   {
                     "_parent": "Kills",
@@ -1615,12 +1617,13 @@
                       "weapon": [
                         "5bffdd7e0db834001b734a1a"
                       ],
-                      "id": "Eliminate 3 Scavs with M-2 Tactical Sword"
+                      "id": "impression_part_1_kills"
                     }
                   }
-                ]
+                ],
+                "id": "impression_part_1_kills_savage"
               },
-              "id": "impression_part_1_aff_1",
+              "id": "impression_part_1 TEXT1",
               "index": 0,
               "parentId": "",
               "oneSessionOnly": false,
@@ -1666,10 +1669,10 @@
         ],
         "Fail": []
       },
-      "description": "You have earned my trust, however I will need you to prove yourself for the task at hand. For now I would like you take out 3 scavs with the M-2 Tactical Sword.",
+      "description": "impression_part_1 description",
       "failMessageText": "impression_part_1 failMessageText",
-      "name": "Impression Part 1",
-      "note": "You have earned my trust, however I will need you to prove yourself for the task at hand. For now I would like you take out 3 scavs with the M-2 Tactical Sword.",
+      "name": "impression_part_1 name",
+      "note": "impression_part_1 note",
       "questStatus": {},
       "traderId": "viktoriya",
       "location": "any",
@@ -1679,8 +1682,8 @@
       "restartable": false,
       "instantComplete": false,
       "secretQuest": false,
-      "startedMessageText": "You have earned my trust, however I will need you to prove yourself for the task at hand. For now I would like you take out 3 scavs with the M-2 Tactical Sword.",
-      "successMessageText": "Great Job! Well done, but what I have in mind will need more skills for this.",
+      "startedMessageText": "impression_part_1 startedMessageText",
+      "successMessageText": "impression_part_1 successMessageText",
       "templateId": "impression_part_1",
       "rewards": {
         "Started": [],
@@ -1725,16 +1728,15 @@
       "QuestName": "Impression Part 2",
       "_id": "impression_part_2",
       "canShowNotificationsInGame": true,
-      "acceptPlayerMessage": "You have done well so far, but this one will be a bit harder. I would like you to elimate 5 more scavs with a TOZ, it must have a FLIR attatched.",
-      "changeQuestMessageText": "You have done well so far, but this one will be a bit harder. I would like you to elimate 5 more scavs with a TOZ, it must have a FLIR attatched.",
-      "completePlayerMessage": "YES! This is what I like to see.",
+      "acceptPlayerMessage": "impression_part_2 acceptPlayerMessage",
+      "changeQuestMessageText": "impression_part_2 changeQuestMessageText",
+      "completePlayerMessage": "impression_part_2 completePlayerMessage",
       "conditions": {
         "AvailableForFinish": [
           {
             "_parent": "CounterCreator",
             "_props": {
               "counter": {
-                "id": "impression_part_2_aff_0",
                 "conditions": [
                   {
                     "_parent": "Kills",
@@ -1748,12 +1750,13 @@
                       "weaponModsInclusive": [
                         ["5d1b5e94d7ad1a2b865a96b0"]
                       ],
-                      "id": "Eliminate 5 Scavs with a TOZ with a FLIR attached"
+                      "id": "impression_part_2_kills"
                     }
                   }
-                ]
+                ],
+                "id": "impression_part_2_kills_savage"
               },
-              "id": "impression_part_2_aff_1",
+              "id": "impression_part_2 TEXT1",
               "index": 0,
               "parentId": "",
               "oneSessionOnly": false,
@@ -1799,10 +1802,10 @@
         ],
         "Fail": []
       },
-      "description": "You have done well so far, but this one will be a bit harder. I would like you to elimate 5 more scavs with a TOZ, it must have a FLIR attatched.",
+      "description": "impression_part_2 description",
       "failMessageText": "impression_part_2 failMessageText",
-      "name": "Impression Part 2",
-      "note": "You have done well so far, but this one will be a bit harder. I would like you to elimate 5 more scavs with a TOZ, it must have a FLIR attatched.",
+      "name": "impression_part_2 name",
+      "note": "impression_part_2 note",
       "questStatus": {},
       "traderId": "viktoriya",
       "location": "any",
@@ -1812,8 +1815,8 @@
       "restartable": false,
       "instantComplete": false,
       "secretQuest": false,
-      "startedMessageText": "You have done well so far, but this one will be a bit harder. I would like you to elimate 5 more scavs with a TOZ, it must have a FLIR attatched.",
-      "successMessageText": "YES! This is what I like to see.",
+      "startedMessageText": "impression_part_2 startedMessageText",
+      "successMessageText": "impression_part_2 successMessageText",
       "templateId": "impression_part_2",
       "rewards": {
         "Started": [],
@@ -1858,16 +1861,15 @@
       "QuestName": "Impression Part 3",
       "_id": "impression_part_3",
       "canShowNotificationsInGame": true,
-      "acceptPlayerMessage": "This time, I would like you to slay 1 more scav with a Flare Gun.",
-      "changeQuestMessageText": "This time, I would like you to slay 1 more scav with a Flare Gun.",
-      "completePlayerMessage": "Well done! I am impressed. You have earned my full trust with what I need.",
+      "acceptPlayerMessage": "impression_part_3 acceptPlayerMessage",
+      "changeQuestMessageText": "impression_part_3 changeQuestMessageText",
+      "completePlayerMessage": "impression_part_3 completePlayerMessage",
       "conditions": {
         "AvailableForFinish": [
           {
             "_parent": "CounterCreator",
             "_props": {
               "counter": {
-                "id": "impression_part_3_aff_0",
                 "conditions": [
                   {
                     "_parent": "Kills",
@@ -1878,12 +1880,13 @@
                       "weapon": [
                         "620109578d82e67e7911abf2"
                       ],
-                      "id": "Eliminate 1 Scav with a flare gun"
+                      "id": "impression_part_3_aff_1"
                     }
                   }
-                ]
+                ],
+                "id": "impression_part_3_aff_0"
               },
-              "id": "impression_part_3_aff_1",
+              "id": "impression_part_3 TEXT1",
               "index": 0,
               "parentId": "",
               "oneSessionOnly": false,
@@ -1929,10 +1932,10 @@
         ],
         "Fail": []
       },
-      "description": "This time, I would like you to slay 1 more scav with a Flare Gun.",
+      "description": "impression_part_3 description",
       "failMessageText": "impression_part_3 failMessageText",
-      "name": "Impression Part 3",
-      "note": "This time, I would like you to slay 1 more scav with a Flare Gun.",
+      "name": "impression_part_3 name",
+      "note": "impression_part_3 note",
       "questStatus": {},
       "traderId": "viktoriya",
       "location": "any",
@@ -1942,8 +1945,8 @@
       "restartable": false,
       "instantComplete": false,
       "secretQuest": false,
-      "startedMessageText": "This time, I would like you to slay 1 more scav with a Flare Gun.",
-      "successMessageText": "Well done! I am impressed. You have earned my full trust with what I need.",
+      "startedMessageText": "impression_part_3 startedMessageText",
+      "successMessageText": "impression_part_3 successMessageText",
       "templateId": "impression_part_3",
       "rewards": {
         "Started": [],
