@@ -4,7 +4,7 @@
     "Weight": 90,
     "RandomSelection": true,
   	"PMCBotLimitPresets": {
-      "FactoryBotLimit": 6,
+      "FactoryBotLimit": 8,
       "InterchangeBotLimit": 6,
       "LaboratoryBotLimit": 6,
       "LighthouseBotLimit": 6,
@@ -15,14 +15,14 @@
       "TarkovStreetsBotLimit": 6
     },
     "SCAVBotLimitPresets": {
-      "FactoryBotLimit": 6,
+      "FactoryBotLimit": 8,
       "InterchangeBotLimit": 12,
-      "LaboratoryBotLimit": 5,
+      "LaboratoryBotLimit": 6,
       "LighthouseBotLimit": 12,
       "ReserveBotLimit": 12,
       "ShorelineBotLimit": 12,
       "WoodsBotLimit": 12,
-      "CustomsBotLimit": 9,
+      "CustomsBotLimit": 12,
       "TarkovStreetsBotLimit": 12
     }
   },
@@ -152,12 +152,12 @@
     "SCAVBotLimitPresets": {
       "FactoryBotLimit": 6,
       "InterchangeBotLimit": 12,
-      "LaboratoryBotLimit": 5,
+      "LaboratoryBotLimit": 6,
       "LighthouseBotLimit": 12,
       "ReserveBotLimit": 12,
       "ShorelineBotLimit": 12,
       "WoodsBotLimit": 12,
-      "CustomsBotLimit": 9,
+      "CustomsBotLimit": 12,
       "TarkovStreetsBotLimit": 12
     }
   },

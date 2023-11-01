@@ -4,8 +4,8 @@
 	"RandomWaveCount": 10,
 	"BossWaveCount": 1,
   "GlobalSCAVRandomWaveTimer": {
-    "WaveTimerMinSec": 60,
-    "WaveTimerMaxSec": 180
+    "WaveTimerMinSec": 30,
+    "WaveTimerMaxSec": 60
   },
   "spawnChances": {
     "cultists": {
@@ -18,8 +18,8 @@
       "lighthouse": 65
     },
     "raiders": {
-      "laboratory": 55,
-      "reserve": 55
+      "laboratory": 65,
+      "reserve": 65
     },
     "bloodhounds": {
       "customs": 30,
