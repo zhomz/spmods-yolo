@@ -10,7 +10,7 @@
     "Logging": true,
 
     "//Use Realistic": "This option is to use realistic or uwu trader image",
-    "useRealistic": true,
+    "useRealistic": false,
 
     "//Buy limits": "True/false, if true buy limits be enforced, false, there will be none",
     "buy_limits": true,
