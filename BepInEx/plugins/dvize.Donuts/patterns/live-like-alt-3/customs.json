@@ -12,17 +12,17 @@
       "WildSpawnType": "pmc",
       "MinDistance": 1,
       "MaxDistance": 1,
-      "MaxRandomNumBots": 4,
+      "MaxRandomNumBots": 5,
       "BotTriggerDistance": 300,
       "BotTimerTrigger": 550,
-      "SpawnChance": 90,
-      "MaxSpawnsBeforeCooldown": 4,
-      "IgnoreTimerFirstSpawn": true,
+      "SpawnChance": 65,
+      "MaxSpawnsBeforeCooldown": 5,
+      "IgnoreTimerFirstSpawn": false,
       "MinSpawnDistanceFromPlayer": 60
     },
     {
       "MapName": "bigmap",
-      "GroupNum": 15,
+      "GroupNum": 14,
       "Name": "Dorms 3rd Story",
       "Position": {
         "x": 175.428024,
@@ -34,15 +34,15 @@
       "MaxDistance": 1,
       "BotTriggerDistance": 300,
       "BotTimerTrigger": 280,
-      "MaxRandomNumBots": 2,
-      "SpawnChance": 55,
-      "MaxSpawnsBeforeCoolDown": 2,
+      "MaxRandomNumBots": 5,
+      "SpawnChance": 35,
+      "MaxSpawnsBeforeCoolDown": 5,
       "IgnoreTimerFirstSpawn": false,
       "MinSpawnDistanceFromPlayer": 60
     },
     {
       "MapName": "bigmap",
-      "GroupNum": 15,
+      "GroupNum": 14,
       "Name": "Dorms 2nd Story",
       "Position": {
         "x": 238.3906,
@@ -54,15 +54,15 @@
       "MaxDistance": 1,
       "BotTriggerDistance": 300,
       "BotTimerTrigger": 280,
-      "MaxRandomNumBots": 2,
-      "SpawnChance": 55,
-      "MaxSpawnsBeforeCoolDown": 2,
+      "MaxRandomNumBots": 5,
+      "SpawnChance": 35,
+      "MaxSpawnsBeforeCoolDown": 5,
       "IgnoreTimerFirstSpawn": false,
       "MinSpawnDistanceFromPlayer": 60
     },
     {
       "MapName": "bigmap",
-      "GroupNum": 16,
+      "GroupNum": 15,
       "Name": "Under Stronghold",
       "Position": {
         "x": 202.246124,
@@ -74,15 +74,15 @@
       "MaxDistance": 1,
       "BotTriggerDistance": 300,
       "BotTimerTrigger": 345,
-      "MaxRandomNumBots": 1,
+      "MaxRandomNumBots": 5,
       "SpawnChance": 55,
-      "MaxSpawnsBeforeCoolDown": 1,
+      "MaxSpawnsBeforeCoolDown": 5,
       "IgnoreTimerFirstSpawn": false,
       "MinSpawnDistanceFromPlayer": 60
     },
     {
       "MapName": "bigmap",
-      "GroupNum": 16,
+      "GroupNum": 15,
       "Name": "Inside Stronghold",
       "Position": {
         "x": 205.202026,
@@ -94,15 +94,15 @@
       "MaxDistance": 1,
       "BotTriggerDistance": 300,
       "BotTimerTrigger": 345,
-      "MaxRandomNumBots": 1,
-      "SpawnChance": 55,
-      "MaxSpawnsBeforeCoolDown": 1,
+      "MaxRandomNumBots": 5,
+      "SpawnChance": 25,
+      "MaxSpawnsBeforeCoolDown": 5,
       "IgnoreTimerFirstSpawn": false,
       "MinSpawnDistanceFromPlayer": 60
     },
     {
       "MapName": "bigmap",
-      "GroupNum": 17,
+      "GroupNum": 15,
       "Name": "Big Red",
       "Position": {
         "x": -216.849625,
@@ -114,15 +114,15 @@
       "MaxDistance": 1,
       "BotTriggerDistance": 300,
       "BotTimerTrigger": 500,
-      "MaxRandomNumBots": 1,
+      "MaxRandomNumBots": 5,
       "SpawnChance": 15,
-      "MaxSpawnsBeforeCoolDown": 1,
-      "IgnoreTimerFirstSpawn": true,
+      "MaxSpawnsBeforeCoolDown": 5,
+      "IgnoreTimerFirstSpawn": false,
       "MinSpawnDistanceFromPlayer": 60
     },
     {
       "MapName": "bigmap",
-      "GroupNum": 18,
+      "GroupNum": 16,
       "Name": "Tent by Dorms",
       "Position": {
         "x": 297.893127,
@@ -134,15 +134,15 @@
       "MaxDistance": 1,
       "BotTriggerDistance": 300,
       "BotTimerTrigger": 340,
-      "MaxRandomNumBots": 2,
+      "MaxRandomNumBots": 5,
       "SpawnChance": 45,
-      "MaxSpawnsBeforeCoolDown": 2,
-      "IgnoreTimerFirstSpawn": true,
+      "MaxSpawnsBeforeCoolDown": 5,
+      "IgnoreTimerFirstSpawn": false,
       "MinSpawnDistanceFromPlayer": 60
     },
     {
       "MapName": "bigmap",
-      "GroupNum": 18,
+      "GroupNum": 16,
       "Name": "Outside of Dorms",
       "Position": {
         "x": 140.461685,
@@ -154,15 +154,15 @@
       "MaxDistance": 1,
       "BotTriggerDistance": 300,
       "BotTimerTrigger": 340,
-      "MaxRandomNumBots": 2,
+      "MaxRandomNumBots": 5,
       "SpawnChance": 45,
-      "MaxSpawnsBeforeCoolDown": 2,
-      "IgnoreTimerFirstSpawn": true,
+      "MaxSpawnsBeforeCoolDown": 5,
+      "IgnoreTimerFirstSpawn": false,
       "MinSpawnDistanceFromPlayer": 60
     },
     {
       "MapName": "bigmap",
-      "GroupNum": 19,
+      "GroupNum": 16,
       "Name": "Outside Factory",
       "Position": {
         "x": 610.4915,
@@ -174,15 +174,15 @@
       "MaxDistance": 1,
       "BotTriggerDistance": 300,
       "BotTimerTrigger": 450,
-      "MaxRandomNumBots": 1,
-      "SpawnChance": 30,
-      "MaxSpawnsBeforeCoolDown": 1,
-      "IgnoreTimerFirstSpawn": true,
+      "MaxRandomNumBots": 5,
+      "SpawnChance": 15,
+      "MaxSpawnsBeforeCoolDown": 5,
+      "IgnoreTimerFirstSpawn": false,
       "MinSpawnDistanceFromPlayer": 60
     },
     {
       "MapName": "bigmap",
-      "GroupNum": 19,
+      "GroupNum": 16,
       "Name": "Inside Small Bldg by Crackhouse",
       "Position": {
         "x": 102.4554,
@@ -194,10 +194,10 @@
       "MaxDistance": 1,
       "BotTriggerDistance": 300,
       "BotTimerTrigger": 400,
-      "MaxRandomNumBots": 1,
-      "SpawnChance": 30,
-      "MaxSpawnsBeforeCoolDown": 1,
-      "IgnoreTimerFirstSpawn": true,
+      "MaxRandomNumBots": 5,
+      "SpawnChance": 15,
+      "MaxSpawnsBeforeCoolDown": 5,
+      "IgnoreTimerFirstSpawn": false,
       "MinSpawnDistanceFromPlayer": 60
     }
   ]

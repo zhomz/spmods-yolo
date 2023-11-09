@@ -79,7 +79,7 @@
   },
   "Shoot": {
     "GlobalScatterMultiplier": 1.0,
-    "GlobalRecoilMultiplier": 1.2,
+    "GlobalRecoilMultiplier": 1.0,
     "MaxRecoil": 1.5,
     "AddRecoil": -1.0,
     "RecoilDecay": 0.75,
@@ -160,7 +160,7 @@
   },
   "Look": {
     "GlobalVisionDistanceMultiplier": 1.7,
-    "GlobalVisionSpeedModifier": 1.2,
+    "GlobalVisionSpeedModifier": 1.15,
     "NightTimeVisionModifier": 0.2,
     "HourDawnStart": 6.0,
     "HourDawnEnd": 8.0,

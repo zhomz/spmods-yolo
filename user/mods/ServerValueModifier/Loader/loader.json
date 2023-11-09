@@ -4,16 +4,17 @@
 		"checkBox5":false
 		},
 	"Items":{
-		"HeatFactor":0.85,
+		"HeatFactor":0.7,
 		"ExamineTime":1,
+		"ExamineKeys":false,
 		"WeaponHeatOff":false,
 		"SMGToHolster":false,
 		"PistolToMain":false,
-		"AllExaminedItems":false,
-		"MisfireChance":0.8,
+		"AllExaminedItems":true,
+		"MisfireChance":0.75,
 		"EquipRigsWithArmors":false,
 		"RemoveSecureContainerFilters":false,
-		"MalfunctChanceMult":0.8,
+		"MalfunctChanceMult":0.75,
 		"WeightChanger":1,
 		"ItemPriceMult":1,
 		"CashStack":500000,
@@ -49,11 +50,11 @@
 		"WaterFilterTime":60,
 		"BitcoinTime":760,
 		"MaxBitcoins":3,
-		"NoFuelMult":0.3,
+		"NoFuelMult":0.1,
 		"ScavCasePrice":1.2,
 		"ScavCaseTime":0.4,
 		"HideoutConstMult":0.0001,
-		"HideoutProdMult":0.05,
+		"HideoutProdMult":0.092,
 		"WaterFilterRate":100,
 		"GPUBoostRate":0.051225,
 		"AirFilterRate":0.0081,
@@ -63,15 +64,15 @@
 		},
 	"Traders":{
 		"Fence":{
-		"FenceArmorDurability_Max":100,
-		"FenceGunDurability_Max":100,
-		"FenceArmorDurability_Min":70,
-		"FenceGunDurability_Min":70,
-		"FencePriceMult":1.2,
-		"FencePremiumAmountOnSale":50,
-		"FencePresetCount":5,
-		"FenceAmountOnSale":140,
-		"FencePresetMult":2
+		"FenceArmorDurability_Max":90,
+		"FenceGunDurability_Max":90,
+		"FenceArmorDurability_Min":10,
+		"FenceGunDurability_Min":10,
+		"FencePriceMult":1.5,
+		"FencePremiumAmountOnSale":25,
+		"FencePresetCount":3,
+		"FenceAmountOnSale":100,
+		"FencePresetMult":2.2
 		},
 		"EnableHealMarkup":false,
 		"RemoveTradeLimits":false,
@@ -106,7 +107,7 @@
 		"543be5dd4bdc2deb348b4569"],
 		"AllClothesFree":true,
 		"AllQuestsAvailable":false,
-		"MinDurabSell":60,
+		"MinDurabSell":50,
 		"ClothesAnySide":true,
 		"EnableTraders":true,
 		"FIRRestrictsQuests":false,
@@ -143,7 +144,7 @@
 		"MixedMin":12,
 		"Streets_air":17,
 		"AirtimeMin":5,
-		"AirtimeMax":15,
+		"AirtimeMax":30,
 		"Lighthouse_air":20,
 		"Bigmap_air":15,
 		"Interchange_air":20,
@@ -153,16 +154,16 @@
 		},
 		"EnableLoot":true,
 		"Locations":{
-		"Streets_conmult":1,
+		"Streets_conmult":0.8,
 		"Streets_mult":3.2,
-		"Lighthouse_conmult":1,
-		"Bigmap_conmult":1,
-		"Interchange_conmult":1,
+		"Lighthouse_conmult":0.8,
+		"Bigmap_conmult":0.8,
+		"Interchange_conmult":0.8,
 		"FactoryDay_conmult":1,
 		"Laboratory_conmult":1,
-		"Shoreline_conmult":1,
-		"Reserve_conmult":1,
-		"Woods_conmult":1,
+		"Shoreline_conmult":0.8,
+		"Reserve_conmult":0.8,
+		"Woods_conmult":0.8,
 		"FactoryNight_conmult":1,
 		"Lighthouse_mult":3,
 		"Bigmap_mult":2.5,
@@ -179,8 +180,8 @@
 		"EnableEnergyHydrationTab":false,
 		"Skills":{
 		"SkillFatigueReset":200,
-		"SkillFreshEffect":1.8,
-		"SkillFPoints":1,
+		"SkillFreshEffect":2.5,
+		"SkillFPoints":2,
 		"SkillPointsBeforeFatigue":1,
 		"SkillMinEffect":0.00025,
 		"SkillFatiguePerPoint":0.5
@@ -203,7 +204,7 @@
 		"UnlimitedStamina":false
 		},
 	"Raids":{
-		"RaidTime":10,
+		"RaidTime":-5,
 		"SaveQuestItems":false,
 		"Exfils":{
 		"CoopPaidLighthouse":10000,
@@ -233,10 +234,10 @@
 		"GoonsFactoryChance":100,
 		"GoonsFactory":false,
 		"BossesOnCustoms":false,
-		"HoundsWoods":30,
-		"HoundsCustoms":30,
+		"HoundsWoods":15,
+		"HoundsCustoms":15,
 		"CultistsEverywhere":false,
-		"HoundsShoreline":30,
+		"HoundsShoreline":20,
 		"Christmas":false,
 		"Halloween":false,
 		"KillaFactory":false,
@@ -262,7 +263,7 @@
 		"MIA":0.7,
 		"Runner":0.7,
 		"Survived":1.8,
-		"Killed":0.05
+		"Killed":0.3
 		}
 		},
 	"Fleamarket":{
@@ -272,17 +273,17 @@
 		"SellOffersAmount":10
 		},
 		"FleaConditions":{
-		"FleaFood_Min":5,
+		"FleaFood_Min":100,
 		"FleaArmor_Min":5,
 		"FleaFood_Max":100,
 		"FleaArmor_Max":100,
-		"FleaMedical_Min":60,
+		"FleaMedical_Min":50,
 		"FleaSpec_Min":2,
 		"FleaMedical_Max":100,
 		"FleaSpec_Max":100,
-		"FleaWeapons_Min":60,
+		"FleaWeapons_Min":80,
 		"FleaVests_Min":5,
-		"FleaKeys_Min":97,
+		"FleaKeys_Min":80,
 		"FleaWeapons_Max":100,
 		"FleaVests_Max":100,
 		"FleaKeys_Max":100
@@ -323,24 +324,24 @@
 		"Dollaroffers":14,
 		"Roubleoffers":78,
 		"NonStack_min":1,
-		"Time_min":6,
-		"Price_min":0.8,
+		"Time_min":3,
+		"Price_min":0.74,
 		"NonStack_max":10,
-		"Time_max":60,
-		"Price_max":1.2
+		"Time_max":90,
+		"Price_max":1.32
 		}
 		},
 	"Insurance":{
 		"RepairBox":{
 		"NoRandomRepair":false,
-		"MaxSkillPointsPerRepair":0.6,
+		"MaxSkillPointsPerRepair":0.85,
 		"OpGunRepair":false,
-		"RepairSkillPoint":0.05,
+		"RepairSkillPoint":0.85,
 		"OpArmorRepair":false,
 		"RepairMult":1
 		},
-		"ReturnChanceTherapist":85,
-		"InsuranceMultTherapist":0.25,
+		"ReturnChanceTherapist":50,
+		"InsuranceMultTherapist":0.35,
 		"EnableInsurance":true,
 		"InsuranceTime":{
 		"Prapor_Max":24,
@@ -348,9 +349,9 @@
 		"Therapist_Max":12,
 		"Therapist_Min":4
 		},
-		"InsuranceMultPrapor":0.16,
-		"InsuranceStorageTime":48,
-		"ReturnChancePrapor":75
+		"InsuranceMultPrapor":0.15,
+		"InsuranceStorageTime":36,
+		"ReturnChancePrapor":40
 		},
 	"Quests":{
 		"EnableQuests":false
@@ -359,13 +360,55 @@
 		"EnableCSM":false
 		},
 	"Scav":{
+		"SCAVPockets":{
+		"ScavFourthH":1,
+		"ScavFourthV":2,
+		"ScavThirdH":1,
+		"ScavThirdV":2,
+		"ScavSecondH":1,
+		"ScavSecondV":2,
+		"ScavFirstH":1,
+		"ScavFirstV":2
+		},
+		"ScavHealth":{
+		"ScavLeftArm":40,
+		"ScavRightArm":40,
+		"ScavHead":35,
+		"ScavChest":65,
+		"ScavStomach":50,
+		"ScavLeftLeg":45,
+		"ScavRightLeg":45
+		},
 		"EnableScav":false
 		},
 	"Bots":{
 		"EnableBots":false
 		},
 	"BL":{
-		"EnableAdvLoad":false
+		"ForceCustomWaves":false,
+		"PMCChance":{
+		"PMCNamePrefix":15,
+		"PMCAllNamePrefix":5,
+		"PMCLooseWep":15,
+		"HostilePMC":100,
+		"PMCWepEnhance":5
+		},
+		"LevelMargin":10,
+		"BearNamesEnable":false,
+		"UsecNamesEnable":false,
+		"PMCRatio":50,
+		"AItoPMC":{
+		"PMCtoCursedScav":20,
+		"SnipertoPMC":0,
+		"PMCtoScav":25,
+		"ExusectoPMC":5,
+		"PMCtoRaider":7
+		},
+		"PMCOverride":false,
+		"LootableMelee":false,
+		"EnableAdvLoad":true,
+		"AddAllKeys":false,
+		"AddAllContainers":false
 		},
 	"Deprecated":{
 		"RemoveStock":false,

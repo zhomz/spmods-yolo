@@ -59,7 +59,7 @@
         "zone": null
       },
       "goons": {
-        "chance": 30,
+        "chance": 35,
         "time": -1,
         "zone": [
           "ZoneScavBase"
@@ -176,7 +176,7 @@
         "zone": null
       },
       "killa": {
-        "chance": 35,
+        "chance": 30,
         "time": -1,
         "zone": [
           "ZoneCenter"
@@ -304,7 +304,7 @@
         "zone": null
       },
       "goons": {
-        "chance": 30,
+        "chance": 35,
         "time": -1,
         "zone": [
           "Zone_Chalet",
@@ -409,7 +409,7 @@
         "zone": null
       },
       "goons": {
-        "chance": 30,
+        "chance": 35,
         "time": -1,
         "zone": [
           "ZoneMeteoStation"
@@ -509,7 +509,7 @@
         ]
       },
       "goons": {
-        "chance": 30,
+        "chance": 35,
         "time": -1,
         "zone": [
           "ZoneScavBase2"
