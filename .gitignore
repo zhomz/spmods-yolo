@@ -1,4 +1,10 @@
-Aki_Data/
+!Aki_Data/
+Aki_Data/*
+!Aki_Data/Server/
+Aki_Data/Server/*
+!Aki_Data/Server/configs/
+Aki_Data/Server/configs/*
+!Aki_Data/Server/configs/pmc.json
 BattlEye/
 EscapeFromTarkov_Data/
 Logs/
@@ -30,5 +36,5 @@ ConsistencyInfo
 EscapeFromTarkov_BE.exe
 Uninstall.exe
 UnityCrashHandler64.exe
-BepInEx/plugins/DrakiaXYZ-QuestTracker/config/pmc968b86d23c2c0a260f0c9d5c.json
+BepInEx/plugins/DrakiaXYZ-QuestTracker/config/
 user/mods/DanW-SPTQuestingBots/log/
