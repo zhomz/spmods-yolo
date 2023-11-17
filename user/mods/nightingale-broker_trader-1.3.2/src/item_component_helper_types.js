@@ -42,3 +42,4 @@ var ClassesWithPoints;
     ClassesWithPoints["KEY"] = "54009119af1c881c07000029";
     ClassesWithPoints["REPAIR_KITS"] = "616eb7aea207f41933308f46";
 })(ClassesWithPoints || (exports.ClassesWithPoints = ClassesWithPoints = {}));
+//# sourceMappingURL=item_component_helper_types.js.map

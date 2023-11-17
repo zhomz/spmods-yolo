@@ -150,3 +150,4 @@ class TraderHelper {
     }
 }
 exports.TraderHelper = TraderHelper;
+//# sourceMappingURL=traderHelpers.js.map

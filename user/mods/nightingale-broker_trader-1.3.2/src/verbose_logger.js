@@ -92,3 +92,4 @@ class VerboseLogger {
     }
 }
 exports.VerboseLogger = VerboseLogger;
+//# sourceMappingURL=verbose_logger.js.map

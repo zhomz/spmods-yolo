@@ -221,3 +221,4 @@ const buildOutWeaponTypeMapper = (location, isNight) => {
 // check if item is weapon, if so, filter mod_scope
 // if scope, check
 // if "55818b224bdc2dde698b456f" Mount, check if any mod_scope within contain correct scopes, if not remove
+//# sourceMappingURL=OnGameStartUtils.js.map

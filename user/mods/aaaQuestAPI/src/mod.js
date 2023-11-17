@@ -38,3 +38,4 @@ class QuestZoneApi {
 }
 exports.QuestZoneApi = QuestZoneApi;
 module.exports = { mod: new QuestZoneApi() };
+//# sourceMappingURL=mod.js.map

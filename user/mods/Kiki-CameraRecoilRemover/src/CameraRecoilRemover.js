@@ -31,3 +31,4 @@ class CameraRecoilRemover {
     }
 }
 module.exports = { mod: new CameraRecoilRemover() };
+//# sourceMappingURL=CameraRecoilRemover.js.map

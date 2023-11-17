@@ -1456,3 +1456,4 @@ class Vicktoriya {
     }
 }
 module.exports = { mod: new Vicktoriya() };
+//# sourceMappingURL=mod.js.map

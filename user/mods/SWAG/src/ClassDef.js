@@ -154,3 +154,4 @@ exports.aiAmountProper = {
     high: 2,
     horde: 4,
 };
+//# sourceMappingURL=ClassDef.js.map

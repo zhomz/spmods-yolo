@@ -118,3 +118,4 @@ class TraderModding {
     }
 }
 module.exports = { mod: new TraderModding() };
+//# sourceMappingURL=mod.js.map

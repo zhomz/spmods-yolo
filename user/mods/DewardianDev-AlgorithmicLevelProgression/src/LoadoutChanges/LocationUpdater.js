@@ -25,3 +25,4 @@ function getTime(time, hourDiff) {
     }
     return Number(Math.abs(parseInt(h) - hourDiff));
 }
+//# sourceMappingURL=LocationUpdater.js.map

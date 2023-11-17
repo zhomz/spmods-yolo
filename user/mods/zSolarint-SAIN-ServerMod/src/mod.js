@@ -58,3 +58,4 @@ class SAIN {
     }
 }
 module.exports = { mod: new SAIN() };
+//# sourceMappingURL=mod.js.map

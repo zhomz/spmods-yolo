@@ -286,3 +286,4 @@ class BrokerTrader {
     }
 }
 module.exports = { mod: new BrokerTrader() };
+//# sourceMappingURL=mod.js.map

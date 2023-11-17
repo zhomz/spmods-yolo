@@ -123,3 +123,4 @@ class FluentAssortConstructor {
     }
 }
 exports.FluentAssortConstructor = FluentAssortConstructor;
+//# sourceMappingURL=fluentTraderAssortCreator.js.map

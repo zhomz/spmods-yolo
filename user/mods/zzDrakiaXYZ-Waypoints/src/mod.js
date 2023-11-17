@@ -33,3 +33,4 @@ class DrakiaXYZWaypoints {
     }
 }
 module.exports = { mod: new DrakiaXYZWaypoints() };
+//# sourceMappingURL=mod.js.map

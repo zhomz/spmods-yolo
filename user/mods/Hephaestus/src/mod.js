@@ -205,3 +205,4 @@ class SampleTrader {
     }
 }
 module.exports = { mod: new SampleTrader() };
+//# sourceMappingURL=mod.js.map

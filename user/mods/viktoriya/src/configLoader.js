@@ -5,3 +5,4 @@ class ConfigLoader {
     configgy = require("../config/config.json");
 }
 exports.ConfigLoader = ConfigLoader;
+//# sourceMappingURL=configLoader.js.map

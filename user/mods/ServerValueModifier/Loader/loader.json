@@ -395,33 +395,33 @@
 		"EnableScav":false
 		},
 	"Bots":{
+		"AIChance":{
+		"KabanChance":35,
+		"TagillaNightChance":30,
+		"KillaStreetsChance":0,
+		"TrioLighthouseChance":35,
+		"TrioShorelineChance":35,
+		"TrioWoodsChance":35,
+		"ZryachiyChance":100,
+		"CultistCustomsChance":15,
+		"CultistShorelineChance":15,
+		"TrioChance":35,
+		"RaiderLabChance":40,
+		"RaiderReserveChance":35,
+		"CultistFactoryChance":2,
+		"CultistWoodsChance":15,
+		"RogueChance":55,
+		"TagillaChance":30,
+		"ShturmanChance":35,
+		"GlukharChance":35,
+		"SanitarChance":35,
+		"ReshalaChance":35,
+		"KillaChance":30
+		},
 		"EnableBots":false
 		},
 	"BL":{
-		"ForceCustomWaves":false,
-		"PMCChance":{
-		"PMCNamePrefix":15,
-		"PMCAllNamePrefix":5,
-		"PMCLooseWep":15,
-		"HostilePMC":100,
-		"PMCWepEnhance":5
-		},
-		"LevelMargin":10,
-		"BearNamesEnable":false,
-		"UsecNamesEnable":false,
-		"PMCRatio":50,
-		"AItoPMC":{
-		"PMCtoCursedScav":20,
-		"SnipertoPMC":0,
-		"PMCtoScav":25,
-		"ExusectoPMC":5,
-		"PMCtoRaider":7
-		},
-		"PMCOverride":false,
-		"LootableMelee":false,
-		"EnableAdvLoad":true,
-		"AddAllKeys":false,
-		"AddAllContainers":false
+		"EnableAdvLoad":false
 		},
 	"Deprecated":{
 		"RemoveStock":false,

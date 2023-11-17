@@ -363,3 +363,4 @@ exports.default = ProgressionChanges;
 //         ammoTypes[calibre] = { ...ammoTypes[calibre] || {}, [_name]: { id: _id, Damage, PenetrationPower } }
 //     }
 // })
+//# sourceMappingURL=ProgressionChanges.js.map

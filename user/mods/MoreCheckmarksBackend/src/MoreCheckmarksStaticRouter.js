@@ -141,3 +141,4 @@ class Mod {
     }
 }
 module.exports = { mod: new Mod() };
+//# sourceMappingURL=MoreCheckmarksStaticRouter.js.map

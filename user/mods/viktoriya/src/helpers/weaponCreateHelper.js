@@ -1118,3 +1118,4 @@ class WeaponCreateHelper {
     }
 }
 exports.WeaponCreateHelper = WeaponCreateHelper;
+//# sourceMappingURL=weaponCreateHelper.js.map

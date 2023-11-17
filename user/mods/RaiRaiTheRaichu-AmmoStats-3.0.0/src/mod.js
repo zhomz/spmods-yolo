@@ -181,3 +181,4 @@ class AmmoStats {
     }
 }
 module.exports = { mod: new AmmoStats() };
+//# sourceMappingURL=mod.js.map

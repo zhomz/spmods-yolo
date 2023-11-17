@@ -6,3 +6,4 @@ class BarterModel {
     _tpl;
 }
 exports.BarterModel = BarterModel;
+//# sourceMappingURL=barter.js.map

@@ -138,3 +138,4 @@ function handleAssorts(CustomItem, db, assortHelper, traderID) {
         .export(targetTrader);
     //create barter item for doorbreacherbox
 }
+//# sourceMappingURL=mod.js.map

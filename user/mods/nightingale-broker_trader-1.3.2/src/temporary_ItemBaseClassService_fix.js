@@ -67,3 +67,4 @@ exports.FixedItemBaseClassService = FixedItemBaseClassService = __decorate([
     __param(2, (0, tsyringe_1.inject)("DatabaseServer")),
     __metadata("design:paramtypes", [typeof (_a = typeof ILogger_1.ILogger !== "undefined" && ILogger_1.ILogger) === "function" ? _a : Object, typeof (_b = typeof LocalisationService_1.LocalisationService !== "undefined" && LocalisationService_1.LocalisationService) === "function" ? _b : Object, typeof (_c = typeof DatabaseServer_1.DatabaseServer !== "undefined" && DatabaseServer_1.DatabaseServer) === "function" ? _c : Object])
 ], FixedItemBaseClassService);
+//# sourceMappingURL=temporary_ItemBaseClassService_fix.js.map

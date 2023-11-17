@@ -256,3 +256,4 @@ class QuestingBots {
     }
 }
 module.exports = { mod: new QuestingBots() };
+//# sourceMappingURL=mod.js.map

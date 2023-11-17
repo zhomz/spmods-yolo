@@ -922,3 +922,4 @@ class SWAG {
     }
 }
 module.exports = { mod: new SWAG() };
+//# sourceMappingURL=SWAG.js.map

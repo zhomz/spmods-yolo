@@ -1,7 +1,7 @@
 {
 	"enabled": true,
 	"debug": {
-		"enabled": true,
+		"enabled": false,
 		"scav_cooldown_time": 1500,
 		"free_labs_access": false,
 		"always_spawn_pmcs": false,
@@ -103,7 +103,7 @@
 		}
 	},
 	"initial_PMC_spawns": {
-		"enabled": true,
+		"enabled": false,
 		"blacklisted_pmc_bot_brains": [ "bossKilla", "bossTagilla", "exUsec", "followerGluharAssault", "followerGluharProtect", "crazyAssaultEvent", "bossKnight" ],
 		"min_distance_from_players_initial": 25,
 		"min_distance_from_players_during_raid": 100,

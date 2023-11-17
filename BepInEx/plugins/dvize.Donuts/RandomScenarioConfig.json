@@ -4,19 +4,23 @@
     "Presets": [
       {
         "Name": "live-like",
-        "Weight": 25
+        "Weight": 20
       },
       {
         "Name": "live-like-alt",
-        "Weight": 25
+        "Weight": 20
       },
       {
         "Name": "live-like-alt-2",
-        "Weight": 25
+        "Weight": 20
       },
       {
         "Name": "live-like-alt-3",
-        "Weight": 25
+        "Weight": 20
+      },
+      {
+        "Name": "boss-mania",
+        "Weight": 10
       }
     ]
   },

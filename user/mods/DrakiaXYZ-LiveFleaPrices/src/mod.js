@@ -81,3 +81,4 @@ class Mod {
     }
 }
 module.exports = { mod: new Mod() };
+//# sourceMappingURL=mod.js.map
