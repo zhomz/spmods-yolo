@@ -65,9 +65,9 @@
 	"Traders":{
 		"Fence":{
 		"FenceArmorDurability_Max":90,
-		"FenceGunDurability_Max":90,
-		"FenceArmorDurability_Min":10,
-		"FenceGunDurability_Min":10,
+		"FenceGunDurability_Max":100,
+		"FenceArmorDurability_Min":70,
+		"FenceGunDurability_Min":70,
 		"FencePriceMult":1.5,
 		"FencePremiumAmountOnSale":25,
 		"FencePresetCount":3,
@@ -76,7 +76,7 @@
 		},
 		"EnableHealMarkup":false,
 		"RemoveTradeLimits":false,
-		"QuestRedeemTime":48,
+		"QuestRedeemTime":90,
 		"TraderMarkup":{
 		"RagmanMarkup":62,
 		"PeacekeeperMarkup":45,
@@ -177,6 +177,18 @@
 		}
 		},
 	"Player":{
+		"CharXP":{
+		"ScavKill":80,
+		"ScavHMult":1.1,
+		"PMCKill":175,
+		"PMCHMult":1.2
+		},
+		"RaidMult":{
+		"MIA":0.7,
+		"Runner":0.7,
+		"Survived":1.8,
+		"Killed":0.3
+		},
 		"EnableEnergyHydrationTab":false,
 		"Skills":{
 		"SkillFatigueReset":200,
@@ -204,9 +216,16 @@
 		"UnlimitedStamina":false
 		},
 	"Raids":{
-		"RaidTime":-5,
+		"WaveMult":{
+		"Low":1,
+		"Horde":10,
+		"High":1.8,
+		"Medium":1.4
+		},
+		"RaidTime":0,
 		"SaveQuestItems":false,
 		"Exfils":{
+		"CoopPaidStreets":5000,
 		"CoopPaidLighthouse":10000,
 		"CarLighthouse":6500,
 		"CarExtractTime":30,
@@ -258,12 +277,6 @@
 		"TaggedAndCursed":false,
 		"EnableBosses":true,
 		"ScavWars":false
-		},
-		"RaidMult":{
-		"MIA":0.7,
-		"Runner":0.7,
-		"Survived":1.8,
-		"Killed":0.3
 		}
 		},
 	"Fleamarket":{
@@ -340,18 +353,18 @@
 		"OpArmorRepair":false,
 		"RepairMult":1
 		},
-		"ReturnChanceTherapist":50,
+		"ReturnChanceTherapist":65,
 		"InsuranceMultTherapist":0.35,
 		"EnableInsurance":true,
 		"InsuranceTime":{
-		"Prapor_Max":24,
+		"Prapor_Max":12,
 		"Prapor_Min":8,
-		"Therapist_Max":12,
+		"Therapist_Max":8,
 		"Therapist_Min":4
 		},
 		"InsuranceMultPrapor":0.15,
-		"InsuranceStorageTime":36,
-		"ReturnChancePrapor":40
+		"InsuranceStorageTime":90,
+		"ReturnChancePrapor":50
 		},
 	"Quests":{
 		"EnableQuests":false

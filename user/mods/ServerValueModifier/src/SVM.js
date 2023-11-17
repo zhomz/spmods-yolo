@@ -4,6 +4,7 @@ class MainSVM
 {
 	preAkiLoad(container)
 	{
+
 		const Logger = container.resolve("WinstonLogger");
 		try { //Checking for loader.json, if doesn't exist - throw a message, disable the mod.
 		const Config = require('../Loader/loader.json');
@@ -41,7 +42,7 @@ class MainSVM
 			{
 				result.saveProgress = (url, info, sessionID) => 
 				{
-				if(info.exit == "left" && info.isPlayerScav == false) 
+				if(info.exit == "left" && !info.isPlayerScav)
 					{
 						info.exit = "runner"
 					}
@@ -58,7 +59,7 @@ class MainSVM
 			{
 				result.saveProgress = (url, info, sessionID) => 
 				{
-				if(info.exit !== "survived" && info.isPlayerScav == false)
+				if(info.exit !== "survived" && !info.isPlayerScav)
 					{
 						info.exit = "runner"
 					}
@@ -137,7 +138,7 @@ class MainSVM
 									for (let type in info.conditions)
 									{
 										let roles = info.conditions[type]
-										roles.Role = "sectantwarrior"
+										roles.Role = "sectantWarrior"
 									}
 								}
 							}
@@ -368,7 +369,24 @@ class MainSVM
 		const suits = DB.templates.customization;
 		const items = DB.templates.items;
 		const globals = DB.globals.config;
+		//DEBUG CONFIGS
+		/*const Inraid = require('G:/Games/EFTOFF/Aki_Data/Server/configs/inraid.json');
+		const Repair = require('G:/Games/EFTOFF/Aki_Data/Server/configs/repair.json');
+		const locs = require('G:/Games/EFTOFF/Aki_Data/Server/configs/location.json');
+		const Airdrop = require('G:/Games/EFTOFF/Aki_Data/Server/configs/airdrop.json');
+		const Ragfair = require('G:/Games/EFTOFF/Aki_Data/Server/configs/ragfair.json');
+		const Insurance = require('G:/Games/EFTOFF/Aki_Data/Server/configs/insurance.json');
+		const Health = require('G:/Games/EFTOFF/Aki_Data/Server/configs/health.json');
+		const Bots = require('G:/Games/EFTOFF/Aki_Data/Server/configs/bot.json');
+		const Quest = require('G:/Games/EFTOFF/Aki_Data/Server/configs/quest.json');
+		const WeatherValues = require('G:/Games/EFTOFF/Aki_Data/Server/configs/weather.json');
+		const trader = require('G:/Games/EFTOFF/Aki_Data/Server/configs/trader.json');
+		const PMC = require('G:/Games/EFTOFF/Aki_Data/Server/configs/pmc.json');
+		*/
+
+
 		// Redirects to server internal configs.
+
 		const configServer = container.resolve("ConfigServer");
 		const Inraid = configServer.getConfig("aki-inraid");
 		const Repair = configServer.getConfig("aki-repair");
@@ -390,8 +408,7 @@ class MainSVM
 
 		//First initialising loggers
 		const funni = 
-		["The most anticipated release according to my imaginary friends!",
-		"This update took 2 months and yet so much got removed ;-;",
+		[
 		"So, how's Baldur's Gate 3?","Still no coop in SVM, what a shame",
 		"Have you tried Minecraft though?","I hope Nikita is proud of me",
 		"This release provides you 16x time the details according to Todd Howard",
@@ -410,9 +427,13 @@ class MainSVM
 		"Don't worry, I won't judge your preferences, you're my favorite casual <3",
 		"Me (Head-Eyes) You",
 		"Did you know? If you kill guys with guns, there will be no one to kill you!",
-		"The all consuming gluttony is approaching","I swear if I forgot some logger somewhere i'll choke someone"]
+		"The all consuming gluttony is approaching","I swear if I forgot some logger somewhere i'll choke someone",
+		"Go on, tell me you're trying to run EFT with 8GB of ram","Are you seriously playing SPT by yourself?",
+		"No, Putting 16x Scope onto TOZ is not a great idea","Don't dissapoint the Glock Daddy",
+		"Go on, take SVD into factory, see if I care","RFB AND VPO FOR THE WIN!","Makes your experience better since 2021!",
+		"You better not forget to take splint with you this time", "You cannot Escape From Tarkov"]
 
-		Logger.log(`SVM 1.7.0 has initialized, ` + funni[Math.floor(Math.random() * funni.length)],"blue"); //No proper math random in JS, smh
+		Logger.log(`SVM 1.7.1 has initialized, ` + funni[Math.floor(Math.random() * funni.length)],"blue"); //No proper math random in JS, smh
 
 
 		if (Config.PresetName != "" && Config.PresetName != undefined)
@@ -512,7 +533,6 @@ class MainSVM
 		{
 			Logger.debug("SVM:Loot settings enabled")
 			//loose loot mults
-			//Logger.info(locs.looseLootMultiplier)
 			locs.looseLootMultiplier.bigmap = Config.Loot.Locations.Bigmap_mult;
 			locs.looseLootMultiplier.factory4_day = Config.Loot.Locations.FactoryDay_mult;
 			locs.looseLootMultiplier.factory4_night = Config.Loot.Locations.FactoryNight_mult;
@@ -523,7 +543,6 @@ class MainSVM
 			locs.looseLootMultiplier.woods = Config.Loot.Locations.Woods_mult;
 			locs.looseLootMultiplier.lighthouse = Config.Loot.Locations.Lighthouse_mult;
 			locs.looseLootMultiplier.tarkovstreets = Config.Loot.Locations.Streets_mult;
-			//Logger.warning(locs.looseLootMultiplier)
 			//container loot mults
 			locs.staticLootMultiplier.bigmap = Config.Loot.Locations.Bigmap_conmult;
 			locs.staticLootMultiplier.factory4_day = Config.Loot.Locations.FactoryDay_conmult;
@@ -536,7 +555,7 @@ class MainSVM
 			locs.staticLootMultiplier.lighthouse = Config.Loot.Locations.Lighthouse_conmult;
 			locs.staticLootMultiplier.tarkovstreets = Config.Loot.Locations.Streets_conmult;
 
-			locs.containerRandomisationSettings.enabled = Config.Loot.RandomContPlace
+			locs.containerRandomisationSettings.enabled = !Config.Loot.RandomContPlace
 			//############## AIRDROPS SECTION ##################
 			Airdrop.airdropMinStartTimeSeconds = Config.Loot.Airdrops.AirtimeMin*60;
 			Airdrop.airdropMaxStartTimeSeconds = Config.Loot.Airdrops.AirtimeMax*60;
@@ -575,7 +594,6 @@ class MainSVM
 			Airdrop.loot.weaponArmor.weaponCrateCount.max = Config.Loot.Airdrops.EquipCratesMax
 			Airdrop.loot.barter.weaponCrateCount.max = Config.Loot.Airdrops.BarterCratesMax
 			Airdrop.loot.foodMedical.weaponCrateCount.max = Config.Loot.Airdrops.MedicalCratesMin
-
 		}
 		//############## BOTS SECTION #################
 		if (Config.Bots.EnableBots)
@@ -924,7 +942,6 @@ class MainSVM
 			}
 			Logger.debug("SVM:Insurance settings enabled")
 			//Repair.priceMultiplier = Config.Insurance.RepairBox.RepairMult; Disabled due to visual bug - it doesn't show converted number, the function itself is working tho
-			//Logger.info(Repair)
 			Repair.armorKitSkillPointGainPerRepairPointMultiplier = Config.Insurance.RepairBox.RepairSkillPoint;
 			Repair.applyRandomizeDurabilityLoss = !Config.Insurance.RepairBox.NoRandomRepair;
 			if(Repair.maxIntellectGainPerRepair == undefined)
@@ -936,7 +953,6 @@ class MainSVM
 				Repair.maxIntellectGainPerRepair.kit = Config.Insurance.RepairBox.MaxSkillPointsPerRepair;
 				Repair.maxIntellectGainPerRepair.trader = Config.Insurance.RepairBox.MaxSkillPointsPerRepair;
 			}
-			//Logger.warning(Repair)
 			Insurance.insuranceMultiplier["54cb50c76803fa8b248b4571"] = Config.Insurance.InsuranceMultPrapor;
 			Insurance.insuranceMultiplier["54cb57776803fa99248b456e"] = Config.Insurance.InsuranceMultTherapist;
 			Insurance.returnChancePercent["54cb50c76803fa8b248b4571"] = Config.Insurance.ReturnChancePrapor;
@@ -1017,17 +1033,17 @@ class MainSVM
 						CustomPocketItem._props.Slots[3]._id = "SVMSPEC4"
 						CustomPocketItem._props.Slots[3]._name = "SpecialSlot4"
 						CustomPocketItem._props.Slots[3]._parent = "CustomPocket"
-						break;
-						case 5:
-							CustomPocketItem._props.Slots[3] = JsonUtil.clone(CustomPocketItem._props.Slots[2])
-							CustomPocketItem._props.Slots[4] = JsonUtil.clone(CustomPocketItem._props.Slots[2])
-							CustomPocketItem._props.Slots[3]._id = "SVMSPEC4"
-							CustomPocketItem._props.Slots[3]._name = "SpecialSlot4"
-							CustomPocketItem._props.Slots[3]._parent = "CustomPocket"
-							CustomPocketItem._props.Slots[4]._id = "SVMSPEC5"
-							CustomPocketItem._props.Slots[4]._name = "SpecialSlot5"
-							CustomPocketItem._props.Slots[4]._parent = "CustomPocket"
-						break;
+					break;
+				case 5:
+					CustomPocketItem._props.Slots[3] = JsonUtil.clone(CustomPocketItem._props.Slots[2])
+					CustomPocketItem._props.Slots[4] = JsonUtil.clone(CustomPocketItem._props.Slots[2])
+					CustomPocketItem._props.Slots[3]._id = "SVMSPEC4"
+					CustomPocketItem._props.Slots[3]._name = "SpecialSlot4"
+					CustomPocketItem._props.Slots[3]._parent = "CustomPocket"
+					CustomPocketItem._props.Slots[4]._id = "SVMSPEC5"
+					CustomPocketItem._props.Slots[4]._name = "SpecialSlot5"
+					CustomPocketItem._props.Slots[4]._parent = "CustomPocket"
+				break;
 				}
 				CustomPocketItem._props.HideEntrails = true;
 				items["CustomPocket"] = CustomPocketItem;
@@ -1038,7 +1054,7 @@ class MainSVM
 				{
 					for(let element in IDsToFilter)
 					{
-						if(CasesToFilter[element] == true )
+						if(CasesToFilter[element])
 						{
 						//Logger.info(CustomPocketItem._props.Slots[specialslots]._props.filters[0].Filter)
 						//Logger.error(IDsToFilter[element])
@@ -1266,41 +1282,29 @@ class MainSVM
 					}
 				}
 				//if (base._name.includes("patron"))// TODO: Add 357. because revolver.
+				//
 				if (base._parent.includes("5485a8684bdc2da71d8b4567"))
 				{
-					let str = base._name.split("_", 2)
-					if (str[1] == "9x19" || str[1] == "9x18pm" || str[1] == "9x21" || str[1] == "762x25tt" || str[1] == "46x30" || str[1] == "57x28" || str[1] == "1143x23" || str[1] == "9x33r")
+					let str = base._name//.split("_", 2)
+					let PistolRounds = ["9x19","9x18pm","9x21","762x25tt","46x30","57x28","1143x23","9x33r","10MM","40SW","357SIG","9MM","45ACP","50AE","380AUTO"]; //Rounds 
+					let ShotgunRounds = ["12x70","20x70","23x75"];
+					let RifleRounds = ["762x39", "545x39","556x45","9x39","366","762x35","300blk","ATL15","GRENDEL","50WLF","KURZ"];
+					let MarksmanRounds = ["762x51","762х54R","762x54r","86x70","127x55","277","BMG"];
+					if (AmmoFilter(PistolRounds,str))
 					{
 						EditSimpleItemData(id, "StackMaxSize", Config.Items.AmmoStacks.PistolRound)
 					}
-					if (str[1] == "12x70" || str[1] == "20x70" || str[1] == "23x75")
+					else if(AmmoFilter(ShotgunRounds,str))
 					{
 						EditSimpleItemData(id, "StackMaxSize", Config.Items.AmmoStacks.ShotgunRound)
 					}
-					if (str[1] == "762x39" || str[1] == "545x39" || str[1] == "556x45" || str[1] == "9x39" || str[1] == "366" || str[1] == "762x35" || str[1] == "300blk" || str[1] == "ATL15")
+					else if(AmmoFilter(RifleRounds,str))
 					{
 						EditSimpleItemData(id, "StackMaxSize", Config.Items.AmmoStacks.RifleRound)
 					}
-					if (str[1] == "762x51" || str[1] == "762х54R" || str[1] == "762x54r" || str[1] == "86x70" || str[1] == "127x55")
+					else if(AmmoFilter(MarksmanRounds,str))
 					{
 						EditSimpleItemData(id, "StackMaxSize", Config.Items.AmmoStacks.MarksmanRound)
-					}
-					//KMC
-					if (str[2] == "10MM" || str[2] == "40SW" || str[2] == "357SIG" || str[2] == "9MM" || str[2] == "45ACP" || str[2] == "50AE" || str[2] == "380AUTO")
-					{
-						EditSimpleItemData(id, "StackMaxSize", Config.Items.AmmoStacks.PistolRound)
-					}
-					if (str[2] == "GRENDEL" || str[2] == "50WLF")
-					{
-						EditSimpleItemData(id, "StackMaxSize", Config.Items.AmmoStacks.RifleRound)
-					}
-					if (str[2] == "BMG" || str[2] == "277")
-					{
-						EditSimpleItemData(id, "StackMaxSize", Config.Items.AmmoStacks.MarksmanRound)
-					}
-					if (str[2] == "KURZ")
-					{
-						EditSimpleItemData(id, "StackMaxSize", Config.Items.AmmoStacks.RifleRound)
 					}
 				}
 				//Change money stacks
@@ -1515,7 +1519,6 @@ class MainSVM
 			Health.healthMultipliers.blacked = Config.Player.DiedHealth.Health_blacked;
 			Health.save.health = Config.Player.DiedHealth.Savehealth;
 			Health.save.effects = Config.Player.DiedHealth.Saveeffects;
-			
 			// skill eff box
 			globals.SkillMinEffectiveness = Config.Player.Skills.SkillMinEffect;
 			globals.SkillFatiguePerPoint = Config.Player.Skills.SkillFatiguePerPoint;
@@ -1523,6 +1526,16 @@ class MainSVM
 			globals.SkillFreshPoints = Config.Player.Skills.SkillFPoints;
 			globals.SkillPointsBeforeFatigue = Config.Player.Skills.SkillPointsBeforeFatigue;
 			globals.SkillFatigueReset = Config.Player.Skills.SkillFatigueReset;
+			//############## Player level XP box ############## 
+			globals.exp.kill.victimBotLevelExp = Config.Player.CharXP.ScavKill;
+			globals.exp.kill.victimLevelExp = Config.Player.CharXP.PMCKill;
+			globals.exp.kill.botHeadShotMult = Config.Player.CharXP.ScavHMult;
+			globals.exp.kill.pmcHeadShotMult = Config.Player.CharXP.PMCHMult
+			//############## END OF RAID Box ############## 
+			globals.exp.match_end.runnerMult = Config.Player.RaidMult.Runner
+			globals.exp.match_end.miaMult = Config.Player.RaidMult.MIA
+			globals.exp.match_end.survivedMult = Config.Player.RaidMult.Survived
+			globals.exp.match_end.killedMult = Config.Player.RaidMult.Killed
 			//Remove fall damage
 			if (Config.Player.FallDamage)
 			{
@@ -1681,11 +1694,6 @@ class MainSVM
 		if (Config.Raids.EnableRaids)
 		{
 			Logger.debug("SVM:Raids settings enabled")
-			//############## END OF RAID SECTION ############## 
-			globals.exp.match_end.runnerMult = Config.Raids.RaidMult.Runner
-			globals.exp.match_end.miaMult = Config.Raids.RaidMult.MIA
-			globals.exp.match_end.survivedMult = Config.Raids.RaidMult.Survived
-			globals.exp.match_end.killedMult = Config.Raids.RaidMult.Killed
 			//############## INRAID SECTION ##################
 			Inraid.MIAOnRaidEnd = Config.Raids.RaidStartup.MIAEndofRaid;
 			Inraid.raidMenuSettings.aiAmount = Config.Raids.RaidStartup.AIAmount;
@@ -1695,6 +1703,12 @@ class MainSVM
 			Inraid.raidMenuSettings.taggedAndCursed = Config.Raids.RaidStartup.TaggedAndCursed;
 			Inraid.save.loot = Config.Raids.RaidStartup.SaveLoot;
 			Inraid.save.durability = Config.Raids.RaidStartup.SaveDurability;
+			Logger.info(globals.WAVE_COEF_HIGH)
+			globals.WAVE_COEF_HIGH =  Config.Raids.WaveMult.High;
+			globals.WAVE_COEF_HORDE = Config.Raids.WaveMult.Horde;
+			globals.WAVE_COEF_LOW = Config.Raids.WaveMult.Low;
+			globals.WAVE_COEF_MID = Config.Raids.WaveMult.Medium;
+			Logger.warning(globals.WAVE_COEF_HIGH)
 			const Midcore = configServer.getConfig("aki-lostondeath");
 			if(Config.Raids.SaveQuestItems)
 			{
@@ -1823,6 +1837,16 @@ class MainSVM
 												FreeExit(locations[i].base.exits[x])
 											}
 											break;
+										case "tarkovstreets":
+											if(Config.Raids.Exfils.CoopPaidStreets !== 0)
+											{
+												locations[i].base.exits[x].Count = Config.Raids.Exfils.CoopPaidStreets;
+											}
+											else
+											{
+												FreeExit(locations[i].base.exits[x])
+											}
+											break;
 										case "interchange":
 											if(Config.Raids.Exfils.CoopPaidInterchange !== 0)
 											{
@@ -1842,6 +1866,7 @@ class MainSVM
 											{
 												FreeExit(locations[i].base.exits[x])
 											}
+											break;
 										case "rezervbase":
 											if(Config.Raids.Exfils.CoopPaidReserve !== 0)
 											{
@@ -1895,15 +1920,17 @@ class MainSVM
 				Logger.debug("SVM: Extended Raid activated");
 				for (let map in locations)
 				{
-					if (map !== "base" &&  (locations[map].base.exit_access_time != NaN && locations[map].base.exit_access_time != undefined)) 
+					if (map !== "base") 
 					{
-						locations[map].base.exit_access_time += Config.Raids.RaidTime
+						if (isJSONValueDefined(locations[map].base.exit_access_time)) 
+						{
+							locations[map].base.exit_access_time += Config.Raids.RaidTime
+						}
+						if (isJSONValueDefined(locations[map].base.EscapeTimeLimit)) 
+						{
+							locations[map].base.EscapeTimeLimit += Config.Raids.RaidTime
+						}    
 					}
-					if (map !== "base" && (locations[map].base.EscapeTimeLimit != NaN && locations[map].base.EscapeTimeLimit != undefined))
-					{
-						locations[map].base.EscapeTimeLimit += Config.Raids.RaidTime
-					}
-					
 				}
 			}
 			//Make all extractions of the map available regardless of the infill
@@ -1989,16 +2016,56 @@ class MainSVM
 			}	
 			if(Config.Raids.RaidEvents.BossesOnCustoms)
 			{
-				let BossWave = CreateBoss("bossKilla", 100, "followerBully", 0, locations["bigmap"].base.OpenZones)
+				for( let bosses in locations["bigmap"].base.BossLocationSpawn)
+				{
+					if (locations["bigmap"].base.BossLocationSpawn[bosses].BossName == "bossBully")
+					{
+						locations["bigmap"].base.BossLocationSpawn[bosses].BossChance = 100;
+					}
+				}
+				let BossWave = CreateBoss("bossKilla", 100, "followerBully", 0, "ZoneOldAZS")
 				locations["bigmap"].base.BossLocationSpawn.push(BossWave)
-				BossWave = CreateBoss("bossBully", 100, "followerBully", 4, locations["bigmap"].base.OpenZones)
-				locations["bigmap"].base.BossLocationSpawn.push(BossWave)	
-				BossWave = CreateBoss("bossKojaniy", 100, "followerKojaniy", 2, locations["bigmap"].base.OpenZones)
+
+				BossWave = CreateBoss("bossKojaniy", 100, "followerKojaniy", 2, "ZoneFactoryCenter")
 				locations["bigmap"].base.BossLocationSpawn.push(BossWave)
-				BossWave = CreateBoss("bossSanitar", 100, "followerSanitar", 2, locations["bigmap"].base.OpenZones)
+
+				BossWave = CreateBoss("bossSanitar", 100, "followerSanitar", 2,  "ZoneGasStation")
 				locations["bigmap"].base.BossLocationSpawn.push(BossWave)
-				BossWave = CreateBoss("bossTagilla", 100, "followerBully", 0, locations["bigmap"].base.OpenZones)
+
+				BossWave = CreateBoss("bossTagilla", 100, "followerBully", 0,  "ZoneOldAZS")
 				locations["bigmap"].base.BossLocationSpawn.push(BossWave)
+
+				const Glukhar = {
+					"BossName": "bossGluhar",
+					"BossChance": 100,
+					"BossZone": "ZoneScavBase",
+					"BossPlayer": false,
+					"BossDifficult": "normal",
+					"BossEscortType": "followerGluharAssault",
+					"BossEscortDifficult": "normal",
+					"BossEscortAmount": "0",
+					"Time": -1,
+					"TriggerId": "",
+					"TriggerName": "",
+					"Supports": [
+					{
+						"BossEscortType": "followerGluharAssault",
+						"BossEscortDifficult": ["normal"],
+						"BossEscortAmount": "2"
+					},
+					{
+						"BossEscortType": "followerGluharSecurity",
+						"BossEscortDifficult": ["normal"],
+						"BossEscortAmount": "2"
+					},
+					{
+						"BossEscortType": "followerGluharScout",
+						"BossEscortDifficult": ["normal"],
+						"BossEscortAmount": "2"
+					}]
+				}
+				locations["bigmap"].base.BossLocationSpawn.push(Glukhar)
+
 			}
 			if (Config.Raids.RaidEvents.GoonsFactory)
 			{
@@ -2122,7 +2189,7 @@ class MainSVM
 			}
 			//trader.updateTimeDefault = Config.Traders.StockTime*60;
 
-			//Inventory.newItemsMarkedFound = Config.Traders.FIRTrade;
+			
 			trader.purchasesAreFoundInRaid = Config.Traders.FIRTrade;
 
 			const Mark = Config.Traders.TraderMarkup;
@@ -2230,7 +2297,7 @@ class MainSVM
 			if (Config.Traders.TradersLvl4)
 			{
 				Logger.debug("SVM: Lvl 4 Traders activated")
-				for (var traderID in traders)
+				for (let traderID in traders)
 				{
 					let loyaltyLevels = traders[traderID].base.loyaltyLevels;
 					for (let level in loyaltyLevels)
@@ -2262,11 +2329,12 @@ class MainSVM
 		if (BL.EnableAdvLoad)
 		{
 			Logger.debug("SVM: PMC section is on")
+			//Logger.info(PMC.convertIntoPmcChance)
 			PMC.convertIntoPmcChance.assault.min = BL.AItoPMC.PMCtoScav;
 			PMC.convertIntoPmcChance.cursedassault.min = BL.AItoPMC.PMCtoCursedScav;
 			PMC.convertIntoPmcChance.pmcbot.min = BL.AItoPMC.PMCtoRaider;
 			PMC.convertIntoPmcChance.exusec.min = BL.AItoPMC.ExusectoPMC;
-			PMC.convertIntoPmcChance.marksman = [];
+			PMC.convertIntoPmcChance.marksman = {};
 			PMC.convertIntoPmcChance.marksman.min = BL.AItoPMC.SnipertoPMC;
 
 			PMC.convertIntoPmcChance.assault.max = BL.AItoPMC.PMCtoScav;
@@ -2281,7 +2349,7 @@ class MainSVM
 			PMC.weaponHasEnhancementChancePercent = BL.PMCChance.PMCWepEnhance;
 			PMC.addPrefixToSameNamePMCAsPlayerChance = BL.PMCChance.PMCNamePrefix;
 			PMC.allPMCsHavePlayerNameWithRandomPrefixChance = BL.PMCChance.PMCAllNamePrefix;
-
+			//Logger.warning(PMC.convertIntoPmcChance)
 			if (BL.ForceCustomWaves)
 			{
 				//Logger.info(locs.customWaves.boss)
@@ -2416,8 +2484,13 @@ class MainSVM
 			Quest.repeatableQuests[0].questConfig.Exploration.maxExtracts = Daily.DailyExtracts;
 			Quest.repeatableQuests[0].questConfig.Completion.minRequestedAmount = Daily.DailyMinItems;
 			Quest.repeatableQuests[0].questConfig.Completion.maxRequestedAmount = Daily.DailyMaxItems;
-			Quest.repeatableQuests[0].questConfig.Elimination.minKills = Daily.DailyMinKills;
-			Quest.repeatableQuests[0].questConfig.Elimination.maxKills = Daily.DailyMaxKills;
+
+			Quest.repeatableQuests[0].questConfig.Elimination[0].minKills = Daily.DailyMinKillsLR1;
+			Quest.repeatableQuests[0].questConfig.Elimination[0].maxKills = Daily.DailyMaxKillsLR1;
+			Quest.repeatableQuests[0].questConfig.Elimination[1].minKills = Daily.DailyMinKillsLR2;
+			Quest.repeatableQuests[0].questConfig.Elimination[1].maxKills = Daily.DailyMaxKillsLR2;
+			Quest.repeatableQuests[0].questConfig.Elimination[2].minKills = Daily.DailyMinKillsLR3;
+			Quest.repeatableQuests[0].questConfig.Elimination[2].maxKills = Daily.DailyMaxKillsLR3;
 			//Weekly
 			Quest.repeatableQuests[1].resetTime = Weekly.WeeklyLifespan*60;
 			Quest.repeatableQuests[1].types = Weekly.WeeklyTypes;
@@ -2432,8 +2505,12 @@ class MainSVM
 			Quest.repeatableQuests[1].questConfig.Exploration.maxExtracts = Weekly.WeeklyExtracts;
 			Quest.repeatableQuests[1].questConfig.Completion.minRequestedAmount = Weekly.WeeklyMinItems;
 			Quest.repeatableQuests[1].questConfig.Completion.maxRequestedAmount = Weekly.WeeklyMaxItems;
-			Quest.repeatableQuests[1].questConfig.Elimination.minKills = Weekly.WeeklyMinKills;
-			Quest.repeatableQuests[1].questConfig.Elimination.maxKills = Weekly.WeeklyMaxKills;
+			Quest.repeatableQuests[1].questConfig.Elimination[0].minKills = Weekly.WeeklyMinKillsLR1;
+			Quest.repeatableQuests[1].questConfig.Elimination[0].maxKills = Weekly.WeeklyMaxKillsLR1;
+			Quest.repeatableQuests[1].questConfig.Elimination[1].minKills = Weekly.WeeklyMinKillsLR2;
+			Quest.repeatableQuests[1].questConfig.Elimination[1].maxKills = Weekly.WeeklyMaxKillsLR2;
+			Quest.repeatableQuests[1].questConfig.Elimination[2].minKills = Weekly.WeeklyMinKillsLR3;
+			Quest.repeatableQuests[1].questConfig.Elimination[2].maxKills = Weekly.WeeklyMaxKillsLR3;
 			//Scav Daily
 			Quest.repeatableQuests[2].resetTime = ScavDaily.ScavDailyLifespan*60;
 			Quest.repeatableQuests[2].types = ScavDaily.ScavDailyTypes;
@@ -2448,8 +2525,10 @@ class MainSVM
 			Quest.repeatableQuests[2].questConfig.Exploration.maxExtracts = ScavDaily.ScavDailyExtracts;
 			Quest.repeatableQuests[2].questConfig.Completion.minRequestedAmount = ScavDaily.ScavDailyMinItems;
 			Quest.repeatableQuests[2].questConfig.Completion.maxRequestedAmount = ScavDaily.ScavDailyMaxItems;
-			Quest.repeatableQuests[2].questConfig.Elimination.minKills = ScavDaily.ScavDailyMinKills;
-			Quest.repeatableQuests[2].questConfig.Elimination.maxKills = ScavDaily.ScavDailyMaxKills;			
+			Quest.repeatableQuests[2].questConfig.Elimination[0].minKills = ScavDaily.ScavDailyMinKillsLR1;
+			Quest.repeatableQuests[2].questConfig.Elimination[0].maxKills = ScavDaily.ScavDailyMaxKillsLR1;
+			Quest.repeatableQuests[2].questConfig.Elimination[1].minKills = ScavDaily.ScavDailyMinKillsLR2;
+			Quest.repeatableQuests[2].questConfig.Elimination[1].maxKills = ScavDaily.ScavDailyMaxKillsLR2;
 		}
 
 		//############## SCAV SECTION ############## I wish i never made one, but here we are
@@ -2575,6 +2654,10 @@ class MainSVM
 				items[id]._props[data] = JSON.parse(value)
 			}
 		}
+		function isJSONValueDefined(value) 
+		{
+			return value !== undefined && !value.isNaN;
+		}
 		function FreeExit(Exit)
 		{
 			Exit.PassageRequirement = "None";
@@ -2587,6 +2670,17 @@ class MainSVM
 			{
 				delete Exit.RequiredSlot;
 			}
+		}
+		function AmmoFilter(AID,Comp)
+		{
+			for (let ID in AID)
+			{
+				if(Comp.includes(AID[ID]))
+				{
+					return true;
+				}
+			}
+			return false;
 		}
 	}
 }

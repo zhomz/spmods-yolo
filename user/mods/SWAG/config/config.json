@@ -12,7 +12,7 @@
       "customs": 15,
       "woods": 15,
       "shoreline": 12,
-      "factory_night": 35
+      "factory_night": 25
     },
     "rogues": {
       "lighthouse": 65
@@ -22,12 +22,12 @@
       "reserve": 55
     },
     "bloodhounds": {
-      "customs": 25,
-      "woods": 25,
-      "shoreline": 25
+      "customs": 15,
+      "woods": 15,
+      "shoreline": 15
     },
     "crazyscavs": {
-      "shoreline": 25
+      "shoreline": 15
     },
     "snipers": {
       "customs": 55,
